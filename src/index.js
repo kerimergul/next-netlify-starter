@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-
+process.env.CI = false
 ReactDOM.render( 
   <React.StrictMode>
     <App />
