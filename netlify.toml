@@ -1,0 +1,4 @@
+[[redirects]]
+  from = "/1080p"
+  to = "/"
+  status = 200
