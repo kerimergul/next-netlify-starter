@@ -15,7 +15,7 @@ class LandingScreen extends Component {
   async componentDidMount() {
     this.interval = setInterval(async () => {
       this.changeViewLoop(this.state.currentView);
-    }, 15000);
+    }, 7000);
   }
 
 
