@@ -2,3 +2,8 @@
   from = "/1080p"
   to = "/"
   status = 200
+
+[[redirects]]
+  from = "/upload"
+  to = "/"
+  status = 200
