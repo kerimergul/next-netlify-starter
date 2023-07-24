@@ -39,7 +39,7 @@ class _480_720 extends Component {
 
 
     renderImg(img) {
-        let data = `${img?.data}`.replace('/"/g', "");
+        let data = `${img?.data}`.replace('"', '').replace('"', '');
         return <img src={data} height={680} width={380} alt="image_480"></img>
     }
 
