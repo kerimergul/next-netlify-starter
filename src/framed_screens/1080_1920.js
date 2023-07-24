@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./style.css";
 import axios from "axios";
-const screen_time_ms = 10000
+const screen_time_ms = 15000
 const style = { backgroundImage: 'url(/backgrounds/bg_1080_1920.jpg)' };
 
 class _1080_1920 extends Component {
