@@ -9,9 +9,10 @@
 }
 
 .i_480_720 {
-    width: 60%;
-    height: 60%;
+    width: 65%;
+    height: 65%;
     top: 40%;
+    left: 17.5%;
     position: absolute;
 }
 
