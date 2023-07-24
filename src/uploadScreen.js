@@ -25,13 +25,11 @@ class UploadScreen extends Component {
 
     async uploadToServer(data) {
         alert('Yükleme işlemi başladı.')
-        console.log(data)
         try {
             blobcnv(data, function (error, img) {
                 if (error) {
                     throw error;
                 }
-                console.log(['base64', img])
                 axios.post("https://signal-server.onrender.com/api/image/upload", { img }).then((res) => {
                     console.log(res);
                     if (res?.data?.status === true) {
