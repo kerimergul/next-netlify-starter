@@ -21,7 +21,6 @@ class _480_720 extends Component {
     getImg() {
         let skip = 0;
         axios.post("https://signal-server.onrender.com/api/image/getImage", { skip }).then((res) => {
-            console.log(res);
             if (res?.data?.status === true) {
                 this.setState({
                     img: res.data.img,
