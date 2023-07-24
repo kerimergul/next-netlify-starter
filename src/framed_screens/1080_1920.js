@@ -13,13 +13,14 @@ class _1080_1920 extends Component {
             counter: 0,
             index: 0,
             wait: false,
+
         };
     }
 
     componentDidMount() {
         this.interval_next = setInterval(async () => {
             this.getNext();
-        }, screen_time_ms / 2);
+        }, screen_time_ms);
         this.interval_set = setInterval(async () => {
             this.changeImg();
         }, screen_time_ms)
@@ -63,6 +64,8 @@ class _1080_1920 extends Component {
             console.log(err);
         })
     }
+
+
 
 
     renderImg(img) {
