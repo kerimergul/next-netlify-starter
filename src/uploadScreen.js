@@ -23,9 +23,10 @@ class UploadScreen extends Component {
     }
 
     async uploadToServer(img) {
-        console.log(['uploadToServer', img])
+        alert('Yükleme işlemi başladı.')
         axios.post("https://signal-server.onrender.com/api/image/upload", { img }).then((res) => {
-            if (res.data.status === true) {
+            console.log(res);
+            if (res?.data?.status === true) {
                 alert("Resim başarıyla yüklendi");
             } else {
                 alert('Resim yüklenirken hata oluştu')
@@ -65,7 +66,7 @@ class UploadScreen extends Component {
             this.setState({
                 data: compressedFile
             })
-            this.uploadToServer(compressedFile);
+            this.uploadToServer(JSON.stringify(compressedFile));
 
         } catch (error) {
             console.log(error);
