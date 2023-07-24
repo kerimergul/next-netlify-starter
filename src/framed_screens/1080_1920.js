@@ -18,20 +18,27 @@ class _1080_1920 extends Component {
     }
 
     componentDidMount() {
-        this.interval_next = setInterval(async () => {
-            this.getNext();
-        }, screen_time_ms);
+        // this.interval_next = setInterval(async () => {
+        //     this.getNext();
+        // }, screen_time_ms);
         this.interval_set = setInterval(async () => {
             this.changeImg();
         }, screen_time_ms)
     }
 
     componentWillUnmount() {
-        clearInterval(this.interval_next);
+        // clearInterval(this.interval_next);
         clearInterval(this.interval_set);
     }
 
     changeImg() {
+        let skip = this.state.counter;
+        this.getImg(skip);
+
+        this.setState({
+            counter: skip + 1,
+            wait: true
+        })
         this.setState({
             img: this.state.nextImg,
             wait: false,
