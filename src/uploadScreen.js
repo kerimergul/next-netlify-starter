@@ -66,7 +66,7 @@ class UploadScreen extends Component {
             this.setState({
                 data: compressedFile
             })
-            this.uploadToServer(JSON.stringify(compressedFile));
+            this.uploadToServer(compressedFile);
 
         } catch (error) {
             console.log(error);
