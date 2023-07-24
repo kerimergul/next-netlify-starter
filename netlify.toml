@@ -7,3 +7,23 @@
   from = "/upload"
   to = "/"
   status = 200
+
+[[redirects]]
+  from = "/_480_720"
+  to = "/"
+  status = 200
+
+[[redirects]]
+  from = "/_576_864"
+  to = "/"
+  status = 200
+
+[[redirects]]
+  from = "/_768_1152"
+  to = "/"
+  status = 200
+
+[[redirects]]
+  from = "/_1080_1920"
+  to = "/"
+  status = 200
