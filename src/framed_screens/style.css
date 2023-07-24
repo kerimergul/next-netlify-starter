@@ -17,8 +17,8 @@
 }
 
 ._576_864 {
-    width: 576;
-    height: 864;
+    width: 576px;
+    height: 864px;
     position: absolute;
     background-repeat: no-repeat;
     background-position-x: center;
@@ -27,8 +27,8 @@
 }
 
 ._768_1152 {
-    width: 768;
-    height: 1152;
+    width: 768px;
+    height: 1152px;
     position: absolute;
     background-repeat: no-repeat;
     background-position-x: center;
@@ -37,8 +37,8 @@
 }
 
 ._1080_1920 {
-    width: 1080;
-    height: 1920;
+    width: 1080px;
+    height: 1920px;
     position: absolute;
     background-repeat: no-repeat;
     background-position-x: center;
