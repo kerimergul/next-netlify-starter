@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./style.css";
 import axios from "axios";
-const screen_time_ms = 15000
+
 const style = { backgroundImage: 'url(/backgrounds/bg_1080_1920.jpg)' };
 
 class _1080_1920 extends Component {
@@ -9,54 +9,17 @@ class _1080_1920 extends Component {
         super(props);
         this.state = {
             img: false,
-            nextImg: false,
             counter: 0,
-            index: 0,
-            wait: false,
+            index: 0
         };
     }
 
     componentDidMount() {
-        // this.interval_next = setInterval(async () => {
-        //     this.getNext();
-        // }, screen_time_ms);
-        this.interval_set = setInterval(async () => {
-            this.changeImg();
-        }, screen_time_ms)
+        this.getImg();
     }
 
-    componentWillUnmount() {
-        // clearInterval(this.interval_next);
-        clearInterval(this.interval_set);
-    }
-
-    changeImg() {
-        let skip = this.state.counter;
-        this.getImg(skip);
-
-        this.setState({
-            counter: skip + 1,
-            wait: true
-        })
-        this.setState({
-            img: this.state.nextImg,
-            wait: false,
-        })
-    }
-
-    getNext() {
-        if (this.state.wait === false) {
-            let skip = this.state.counter;
-            this.getImg(skip);
-
-            this.setState({
-                counter: skip + 1,
-                wait: true
-            })
-        }
-    }
-
-    getImg(skip) {
+    getImg() {
+        let skip = 0;
         axios.post("https://signal-server.onrender.com/api/image/getImage", { skip }).then((res) => {
             if (res?.data?.status === true) {
                 this.setState({
@@ -71,7 +34,7 @@ class _1080_1920 extends Component {
         })
     }
 
-
+    componentWillUnmount() { }
 
 
     renderImg(img) {
