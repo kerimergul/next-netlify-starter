@@ -13,7 +13,6 @@ class _1080_1920 extends Component {
             counter: 0,
             index: 0,
             wait: false,
-
         };
     }
 
