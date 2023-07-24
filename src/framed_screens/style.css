@@ -8,6 +8,12 @@
     background-size: cover;
 }
 
+.i_480_720 {
+    width: 100%;
+    height: 60%;
+    top: 40%;
+}
+
 ._576_864 {
     width: 576;
     height: 864;
