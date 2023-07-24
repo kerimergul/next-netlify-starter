@@ -25,20 +25,23 @@ class UploadScreen extends Component {
     async uploadToServer(data) {
         alert('Yükleme işlemi başladı.')
         console.log(data)
-        var file = new File([data], data?.name);
-        let img = new FormData();
-        img.append('audio', file);
-        axios.post("https://signal-server.onrender.com/api/image/upload", { img }).then((res) => {
-            console.log(res);
-            if (res?.data?.status === true) {
-                alert("Resim başarıyla yüklendi");
-            } else {
-                alert('Resim yüklenirken hata oluştu')
-            }
-        }).catch((err) => {
-            alert("Resim yüklenirken hata oluştu");
-            console.log(err);
-        })
+        var reader = new FileReader();
+        reader.readAsDataURL(data);
+        reader.onloaded = function () {
+            var img = reader.result;
+            console.log(['base64', img])
+            axios.post("https://signal-server.onrender.com/api/image/upload", { img }).then((res) => {
+                console.log(res);
+                if (res?.data?.status === true) {
+                    alert("Resim başarıyla yüklendi");
+                } else {
+                    alert('Resim yüklenirken hata oluştu')
+                }
+            }).catch((err) => {
+                alert("Resim yüklenirken hata oluştu");
+                console.log(err);
+            })
+        }
     }
 
 
@@ -64,7 +67,7 @@ class UploadScreen extends Component {
             console.log('compressedFile instanceof Blob', compressedFile instanceof Blob); // true
             console.log(`compressedFile size ${compressedFile.size / 1024 / 1024} MB`); // smaller than maxSizeMB
             console.log(compressedFile)
-            
+
             this.uploadToServer(compressedFile);
 
             saveAs(compressedFile, "compressed_" + compressedFile?.name); // write your own logic
