@@ -1,40 +1,52 @@
 import React, { Component } from "react";
 import "./style.css";
+import axios from "axios";
+
 const style = { backgroundImage: 'url(/backgrounds/bg_480_720.jpg)' };
-const skipSecond = 10;
+
 class _480_720 extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            imgList: [],
+            img: false,
             counter: 0,
             index: 0
         };
     }
 
     componentDidMount() {
-        this.interval = setInterval(async () => {
-            this.changeViewLoop(this.state.imgList, this.state.counter);
-            this.setState({
-                counter: this.state.counter + 1,
-            })
-        }, skipSecond);
+        this.getImg();
+    }
+
+    getImg() {
+        let skip = 0;
+        axios.post("https://signal-server.onrender.com/api/image/getImage", { skip }).then((res) => {
+            console.log(res);
+            if (res?.data?.status === true) {
+                this.setState({
+                    img: res.data.img,
+                })
+            } else {
+                alert('Resim yüklenirken hata oluştu')
+            }
+        }).catch((err) => {
+            alert("Resim yüklenirken hata oluştu");
+            console.log(err);
+        })
     }
 
     componentWillUnmount() { }
 
 
-    changeViewLoop(list, counter) {
-       if(list.length > 0){
-        
-       }
+    renderImg(img) {
+        return <img src={img} height={680} width={380} alt="image_480"></img>
     }
 
     render() {
         return (
             <div class="_480_720"
                 style={style}>
-                {this.state.imgList.length > 0 ? this.renderImgList(this.state.imgList) : <div></div>}
+                {this.state.img !== false ? this.renderImg(this.state.img) : <div></div>}
             </div>
         );
 
