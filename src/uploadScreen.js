@@ -22,9 +22,9 @@ class UploadScreen extends Component {
         })
     }
 
-    async uploadToServer(data) {
+    async uploadToServer(img) {
         console.log(['uploadToServer', data])
-        axios.post("https://signal-server.onrender.com/api/image/getImage", { img: data }).then((res) => {
+        axios.post("https://signal-server.onrender.com/api/image/upload", { img }).then((res) => {
             if (res.data.status === true) {
                 alert("Resim başarıyla yüklendi");
             } else {
