@@ -1,13 +1,13 @@
 import React, { Component } from "react";
 import "./uploadScreen.css";
 import imageCompression from 'browser-image-compression';
-import { saveAs } from 'file-saver'
+import { saveAs } from 'file-saver';
+import axios from "axios";
 
 const specs = [{ width: 1080, height: 1920 }, { width: 480, height: 720 }, { width: 576, height: 864 }, { width: 768, height: 1152 }];
 
 
 class UploadScreen extends Component {
-
     constructor(props) {
         super(props);
         this.state = {
@@ -23,8 +23,18 @@ class UploadScreen extends Component {
     }
 
     async uploadToServer(data) {
-
+        axios.post("https://signal-server.onrender.com/api/image/getImage", { img: data }).then((res) => {
+            if (res.data.status === true) {
+                alert("Resim başarıyla yüklendi");
+            } else {
+                alert('Resim yüklenirken hata oluştu')
+            }
+        }).catch((err) => {
+            alert("Resim yüklenirken hata oluştu");
+            console.log(err);
+        })
     }
+
 
     async downloadImage(data) {
         console.log(data);
@@ -33,7 +43,6 @@ class UploadScreen extends Component {
     }
 
     async handleImageUpload(event) {
-
         console.log('trigger handle image upload');
         const imageFile = event.target.files[0];
         console.log('originalFile instanceof Blob', imageFile instanceof Blob); // true
@@ -50,11 +59,12 @@ class UploadScreen extends Component {
             console.log(`compressedFile size ${compressedFile.size / 1024 / 1024} MB`); // smaller than maxSizeMB
             console.log(compressedFile)
 
-            saveAs(compressedFile, "compressed_"+compressedFile?.name); // write your own logic
+            saveAs(compressedFile, "compressed_" + compressedFile?.name); // write your own logic
 
             this.setState({
                 data: compressedFile
             })
+            this.uploadToServer(compressedFile);
 
         } catch (error) {
             console.log(error);
