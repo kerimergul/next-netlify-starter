@@ -54,6 +54,14 @@
     background-size: cover;
 }
 
+.i_768_1152 {
+    width: 70%;
+    height: 67%;
+    top: 33%;
+    left: 12.5%;
+    position: absolute;
+}
+
 ._1080_1920 {
     width: 1080px;
     height: 1920px;

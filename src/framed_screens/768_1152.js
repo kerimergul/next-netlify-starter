@@ -76,7 +76,7 @@ class _768_1152 extends Component {
 
     renderImg(img) {
         let data = `${img?.data}`.replace('"', '').replace('"', '');
-        return <img src={data} alt="image_480" class="i"></img>
+        return <img src={data} alt="image_480" class="i_768_1152"></img>
     }
 
     render() {
