@@ -27,3 +27,8 @@
   from = "/_1080_1920"
   to = "/"
   status = 200
+
+[[redirects]]
+  from = "/_4092_960"
+  to = "/"
+  status = 200

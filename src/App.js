@@ -8,6 +8,7 @@ import _480_720 from "./framed_screens/480_720";
 import _576_864 from "./framed_screens/576_864";
 import _768_1152 from "./framed_screens/768_1152";
 import _1080_1920 from "./framed_screens/1080_1920";
+import _4092_960 from "./framed_screens/4092_960";
 
 class App extends Component {
   constructor(props) {
@@ -28,6 +29,8 @@ class App extends Component {
       return <_768_1152></_768_1152>
     } else if (window.location.href.includes("/_1080_1920")) {
       return <_1080_1920></_1080_1920>
+    } else if (window.location.href.includes("/_4092_960")) {
+      return <_4092_960></_4092_960>
     } else {
       return <LandingScreen></LandingScreen>;
     }
