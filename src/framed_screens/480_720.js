@@ -39,15 +39,16 @@ class _480_720 extends Component {
 
 
     renderImg(img) {
-        console.log(img);
-        return <img src={img} height={680} width={380} alt="image_480"></img>
+        let data = `${img?.data}`.split('/')[1];
+        console.log(data);
+        return <img src={`data:image/jpeg;base64,${data}`} height={680} width={380} alt="image_480"></img>
     }
 
     render() {
         return (
             <div class="_480_720"
                 style={style}>
-                {/* {this.state.img !== false ? this.renderImg(this.state.img) : <div></div>} */}
+                {this.state.img !== false ? this.renderImg(this.state.img) : <div></div>}
             </div>
         );
 
