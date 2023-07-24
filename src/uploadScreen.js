@@ -25,22 +25,26 @@ class UploadScreen extends Component {
     async uploadToServer(data) {
         alert('Yükleme işlemi başladı.')
         console.log(data)
-        var reader = new FileReader();
-        reader.readAsDataURL(data);
-        reader.onloaded = function () {
-            var img = reader.result;
-            console.log(['base64', img])
-            axios.post("https://signal-server.onrender.com/api/image/upload", { img }).then((res) => {
-                console.log(res);
-                if (res?.data?.status === true) {
-                    alert("Resim başarıyla yüklendi");
-                } else {
-                    alert('Resim yüklenirken hata oluştu')
-                }
-            }).catch((err) => {
-                alert("Resim yüklenirken hata oluştu");
-                console.log(err);
-            })
+        try {
+            var reader = new FileReader();
+            reader.readAsDataURL(data);
+            reader.onloaded = function () {
+                var img = reader.result;
+                console.log(['base64', img])
+                axios.post("https://signal-server.onrender.com/api/image/upload", { img }).then((res) => {
+                    console.log(res);
+                    if (res?.data?.status === true) {
+                        alert("Resim başarıyla yüklendi");
+                    } else {
+                        alert('Resim yüklenirken hata oluştu')
+                    }
+                }).catch((err) => {
+                    alert("Resim yüklenirken hata oluştu");
+                    console.log(err);
+                })
+            }
+        } catch (err) {
+            console.log(err);
         }
     }
 
