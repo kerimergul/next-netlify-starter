@@ -39,9 +39,8 @@ class _480_720 extends Component {
 
 
     renderImg(img) {
-        let data = `${img?.data}`.split('/');
+        let data = `${img?.data}`;
         console.log(data);
-        data = data[2];
         return <img src={`data:image/jpeg;base64,${data}`} height={680} width={380} alt="image_480"></img>
     }
 
