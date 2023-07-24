@@ -3,6 +3,7 @@ import "./uploadScreen.css";
 import imageCompression from 'browser-image-compression';
 import { saveAs } from 'file-saver';
 import axios from "axios";
+import blobcnv from "blob-to-base64";
 
 const specs = [{ width: 1080, height: 1920 }, { width: 480, height: 720 }, { width: 576, height: 864 }, { width: 768, height: 1152 }];
 
@@ -26,10 +27,10 @@ class UploadScreen extends Component {
         alert('Yükleme işlemi başladı.')
         console.log(data)
         try {
-            var reader = new FileReader();
-            reader.readAsDataURL(data);
-            reader.onloaded = function () {
-                var img = reader.result;
+            blobcnv(data, function (error, img) {
+                if (error) {
+                    throw error;
+                }
                 console.log(['base64', img])
                 axios.post("https://signal-server.onrender.com/api/image/upload", { img }).then((res) => {
                     console.log(res);
@@ -42,7 +43,7 @@ class UploadScreen extends Component {
                     alert("Resim yüklenirken hata oluştu");
                     console.log(err);
                 })
-            }
+            })
         } catch (err) {
             console.log(err);
         }
