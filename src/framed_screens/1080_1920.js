@@ -43,7 +43,7 @@ class _1080_1920 extends Component {
             this.getImg(skip);
 
             this.setState({
-                counter: counter + 1,
+                counter: skip + 1,
                 wait: true
             })
         }
