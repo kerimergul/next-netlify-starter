@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import "./style.css";
 import axios from "axios";
 const screen_time_ms = 15000
-const style = { backgroundImage: 'url(/backgrounds/bg_1080_1920.jpg)' };
+const style = { backgroundImage: 'url(/backgrounds/bg_768_1152.jpg)' };
 
 class _768_1152 extends Component {
     constructor(props) {
