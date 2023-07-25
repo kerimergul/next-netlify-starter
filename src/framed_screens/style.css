@@ -443,8 +443,7 @@
     height: auto;
     top: 0%;
     left: 10%;
-    vertical-align: bottom;
-    position: relative;
+    position: absolute;
 }
 
 .i_landscape {
