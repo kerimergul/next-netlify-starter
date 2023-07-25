@@ -401,7 +401,7 @@
     top: 33%; 
     text-align: center;
     vertical-align: bottom;
-    position: absolute;
+    position: relative;
 }
 
 .i_v1 {
