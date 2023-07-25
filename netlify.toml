@@ -9,7 +9,23 @@
   status = 200
 
 [[redirects]]
+  from = "/_384_960"
+  to = "/"
+  status = 200
+
+
+[[redirects]]
   from = "/_480_720"
+  to = "/"
+  status = 200
+
+[[redirects]]
+  from = "/_512_786"
+  to = "/"
+  status = 200
+
+[[redirects]]
+  from = "/_576_336"
   to = "/"
   status = 200
 
@@ -19,7 +35,77 @@
   status = 200
 
 [[redirects]]
+  from = "/_624_1040"
+  to = "/"
+  status = 200
+
+[[redirects]]
+  from = "/_640_1120"
+  to = "/"
+  status = 200
+
+[[redirects]]
+  from = "/_640_1140"
+  to = "/"
+  status = 200
+
+[[redirects]]
+  from = "/_648_384"
+  to = "/"
+  status = 200
+
+[[redirects]]
+  from = "/_720_480"
+  to = "/"
+  status = 200
+
+[[redirects]]
   from = "/_768_1152"
+  to = "/"
+  status = 200
+
+[[redirects]]
+  from = "/_768_1344"
+  to = "/"
+  status = 200
+
+[[redirects]]
+  from = "/_864_432"
+  to = "/"
+  status = 200
+
+[[redirects]]
+  from = "/_864_576"
+  to = "/"
+  status = 200
+
+[[redirects]]
+  from = "/_864_720"
+  to = "/"
+  status = 200
+
+[[redirects]]
+  from = "/_864_1440"
+  to = "/"
+  status = 200
+
+[[redirects]]
+  from = "/_960_640"
+  to = "/"
+  status = 200
+
+[[redirects]]
+  from = "/_960_2016"
+  to = "/"
+  status = 200
+
+[[redirects]]
+  from = "/_1024_640"
+  to = "/"
+  status = 200
+
+[[redirects]]
+  from = "/_1080_600"
   to = "/"
   status = 200
 
@@ -29,6 +115,72 @@
   status = 200
 
 [[redirects]]
+  from = "/_1088_576"
+  to = "/"
+  status = 200
+
+[[redirects]]
+  from = "/_1152_640"
+  to = "/"
+  status = 200
+
+[[redirects]]
+  from = "/_1152_704"
+  to = "/"
+  status = 200
+
+[[redirects]]
+  from = "/_1152_720"
+  to = "/"
+  status = 200
+
+[[redirects]]
+  from = "/_1152_768"
+  to = "/"
+  status = 200
+
+[[redirects]]
+  from = "/_1280_704"
+  to = "/"
+  status = 200
+
+[[redirects]]
+  from = "/_1280_800"
+  to = "/"
+  status = 200
+
+[[redirects]]
+  from = "/_1440_1080"
+  to = "/"
+  status = 200
+
+[[redirects]]
+  from = "/_1536_960"
+  to = "/"
+  status = 200
+
+[[redirects]]
+  from = "/_1548_946"
+  to = "/"
+  status = 200
+
+[[redirects]]
+  from = "/_1920_1080"
+  to = "/"
+  status = 200
+
+[[redirects]]
+  from = "/_1920_1152"
+  to = "/"
+  status = 200
+
+[[redirects]]
+  from = "/_2160_3840"
+  to = "/"
+  status = 200
+
+[[redirects]]
   from = "/_4092_960"
   to = "/"
   status = 200
+
