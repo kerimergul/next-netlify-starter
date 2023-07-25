@@ -7,6 +7,8 @@
     background-position-y: center;
     background-size: cover;
     overflow: hidden;
+    text-align: center;
+    vertical-align: bottom;
 }
 
 ._480_720 {
@@ -398,8 +400,7 @@
 .i_v1_384_960 {
     width: auto;
     height: 67%;
-    top: 33%;
-    text-align: center;
+    top: 33%;    
     vertical-align: bottom;
 }
 
