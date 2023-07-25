@@ -121,8 +121,6 @@ class App extends Component {
       return <_1536_960></_1536_960>
     } else if (window.location.href.includes("/_1548_946")) {
       return <_1548_946></_1548_946>
-    } else if (window.location.href.includes("/_1548_946")) {
-      return <_1548_946></_1548_946>
     } else if (window.location.href.includes("/_1920_1080")) {
       return <_1920_1080></_1920_1080>
     } else if (window.location.href.includes("/_1920_1152")) {
