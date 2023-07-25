@@ -2,9 +2,9 @@ import React, { Component } from "react";
 import "./style.css";
 import axios from "axios";
 
-const style = { backgroundImage: 'url(/backgrounds/bg_380_960.jpg)' };
+const style = { backgroundImage: 'url(/backgrounds/bg_384_960.jpg)' };
 
-class _380_960 extends Component {
+class _384_960 extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -44,7 +44,7 @@ class _380_960 extends Component {
 
     render() {
         return (
-            <div class="_380_960"
+            <div class="_384_960"
                 style={style}>
                 {this.state.img !== false ? this.renderImg(this.state.img) : <div></div>}
             </div>
@@ -52,4 +52,4 @@ class _380_960 extends Component {
 
     }
 }
-export default _380_960;
+export default _384_960;
