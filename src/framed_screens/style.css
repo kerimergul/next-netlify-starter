@@ -1,3 +1,13 @@
+._384_960 {
+    width: 384px;
+    height: 960px;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    background-size: cover;
+}
+
 ._480_720 {
     width: 480px;
     height: 720px;
@@ -8,9 +18,9 @@
     background-size: cover;
 }
 
-._4092_960{
-    width: 4092px;
-    height: 960px;
+._512_786 {
+    width: 512px;
+    height: 786px;
     position: absolute;
     background-repeat: no-repeat;
     background-position-x: center;
@@ -18,25 +28,69 @@
     background-size: cover;
 }
 
-.i_landscape {
-    width: 17.5%;
-    height: 100%;
-    top: 0%;
-    left: 17.5%;
-    position: absolute;    
-}
-
-.i {
-    width: 75%;
-    height: 67%;
-    top: 33%;
-    left: 12.5%;
+._576_336 {
+    width: 576px;
+    height: 336px;
     position: absolute;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    background-size: cover;
 }
 
 ._576_864 {
     width: 576px;
     height: 864px;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    background-size: cover;
+}
+
+._624_1040 {
+    width: 624px;
+    height: 1040px;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    background-size: cover;
+}
+
+._640_1120 {
+    width: 640px;
+    height: 1120px;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    background-size: cover;
+}
+
+._640_1140 {
+    width: 640px;
+    height: 1140px;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    background-size: cover;
+}
+
+._648_384 {
+    width: 648px;
+    height: 384px;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    background-size: cover;
+}
+
+._720_480 {
+    width: 720px;
+    height: 480px;
     position: absolute;
     background-repeat: no-repeat;
     background-position-x: center;
@@ -53,6 +107,256 @@
     background-position-y: center;
     background-size: cover;
 }
+
+._768_1344 {
+    width: 768px;
+    height: 1344px;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    background-size: cover;
+}
+
+._864_432 {
+    width: 864px;
+    height: 432px;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    background-size: cover;
+}
+
+._864_576 {
+    width: 864px;
+    height: 576px;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    background-size: cover;
+}
+
+._864_720 {
+    width: 864px;
+    height: 720px;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    background-size: cover;
+}
+
+
+._864_1440 {
+    width: 864px;
+    height: 1440px;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    background-size: cover;
+}
+
+._960_640 {
+    width: 960px;
+    height: 640px;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    background-size: cover;
+}
+
+._960_2016 {
+    width: 960px;
+    height: 2016px;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    background-size: cover;
+}
+
+._1024_640 {
+    width: 1024px;
+    height: 640px;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    background-size: cover;
+}
+
+._1080_600 {
+    width: 1080px;
+    height: 600px;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    background-size: cover;
+}
+
+._1088_576 {
+    width: 1088px;
+    height: 576px;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    background-size: cover;
+}
+
+._1152_640 {
+    width: 1152px;
+    height: 640px;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    background-size: cover;
+}
+
+._1152_704 {
+    width: 1152px;
+    height: 704px;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    background-size: cover;
+}
+
+._1152_720 {
+    width: 1152px;
+    height: 720px;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    background-size: cover;
+}
+
+._1152_768 {
+    width: 1152px;
+    height: 768px;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    background-size: cover;
+}
+
+._1280_704 {
+    width: 1280px;
+    height: 704px;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    background-size: cover;
+}
+
+
+._1280_800 {
+    width: 1280px;
+    height: 800px;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    background-size: cover;
+}
+
+._1440_1080 {
+    width: 1440px;
+    height: 1080px;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    background-size: cover;
+}
+
+._1536_960 {
+    width: 1536px;
+    height: 960px;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    background-size: cover;
+}
+
+._1548_946 {
+    width: 1548px;
+    height: 946px;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    background-size: cover;
+}
+
+
+._1920_1080 {
+    width: 1920px;
+    height: 1080px;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    background-size: cover;
+}
+
+._1920_1152 {
+    width: 1920px;
+    height: 1152px;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    background-size: cover;
+}
+
+._2160_3840 {
+    width: 2160px;
+    height: 3840px;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    background-size: cover;
+}
+
+._4092_960 {
+    width: 4092px;
+    height: 960px;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    background-size: cover;
+}
+
+.i_landscape {
+    width: 17.5%;
+    height: 100%;
+    top: 0%;
+    left: 17.5%;
+    position: absolute;
+}
+
+.i {
+    width: 75%;
+    height: 67%;
+    top: 33%;
+    left: 12.5%;
+    position: absolute;
+}
+
 
 .i_768_1152 {
     width: 65%;
