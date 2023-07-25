@@ -454,4 +454,6 @@
     background-position-y: center;
     background-size: cover;
     overflow: hidden;
+    text-align: center;
+    vertical-align: bottom;
 }
