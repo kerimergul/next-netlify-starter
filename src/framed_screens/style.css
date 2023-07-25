@@ -341,11 +341,11 @@
     background-size: cover;
 }
 
-.i_lanscape_v1 {
+.i_landscape_v1 {
     width: 25%;
-    height: 100%;
+    height: auto;
     top: 0%;
-    left: 15%;
+    left: 12.5%;
     position: absolute;
 }
 
