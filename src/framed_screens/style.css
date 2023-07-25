@@ -438,6 +438,14 @@
     vertical-align: bottom;
 }
 
+.i_landscape_v2 {
+    width: 20%;
+    height: auto;
+    top: 0%;
+    left: 10%;
+    position: absolute;
+}
+
 .i_landscape_v1 {
     width: 42%;
     height: auto;
