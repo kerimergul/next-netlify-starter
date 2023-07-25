@@ -256,6 +256,19 @@
     overflow: hidden;
 }
 
+._1080_1920 {
+    width: 1080px;
+    height: 1920px;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    background-size: cover;
+    overflow: hidden;
+    text-align: center;
+    vertical-align: bottom;
+}
+
 ._1152_640 {
     width: 1152px;
     height: 640px;
@@ -443,17 +456,4 @@
     top: 33%;
     left: 17.5%;
     position: absolute;
-}
-
-._1080_1920 {
-    width: 1080px;
-    height: 1920px;
-    position: absolute;
-    background-repeat: no-repeat;
-    background-position-x: center;
-    background-position-y: center;
-    background-size: cover;
-    overflow: hidden;
-    text-align: center;
-    vertical-align: bottom;
 }
