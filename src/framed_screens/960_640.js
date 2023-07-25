@@ -39,7 +39,7 @@ class _960_640 extends Component {
 
     renderImg(img) {
         let data = `${img?.data}`.replace('"', '').replace('"', '');
-        return <img src={data} alt="image_480" class="i_landscape"></img>
+        return <img src={data} alt="image_480" class="i_landscape_v1"></img>
     }
 
     render() {
