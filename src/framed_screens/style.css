@@ -402,6 +402,7 @@
     height: 67%;
     top: 33%;    
     vertical-align: bottom;
+    position: relative;
 }
 
 .i_v1 {
