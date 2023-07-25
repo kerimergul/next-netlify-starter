@@ -48,6 +48,7 @@
     background-position-y: center;
     background-size: cover;
     overflow: hidden;
+    vertical-align: bottom;
 }
 
 
@@ -113,6 +114,7 @@
     background-position-y: center;
     background-size: cover;
     overflow: hidden;
+    vertical-align: bottom;
 }
 
 ._720_480 {
@@ -124,6 +126,7 @@
     background-position-y: center;
     background-size: cover;
     overflow: hidden;
+    vertical-align: bottom;
 }
 
 ._768_1152 {
@@ -134,8 +137,8 @@
     background-position-x: center;
     background-position-y: center;
     background-size: cover;
-    overflow: hidden;
     text-align: center;
+    overflow: hidden;
     vertical-align: bottom;
 }
 
@@ -161,6 +164,7 @@
     background-position-y: center;
     background-size: cover;
     overflow: hidden;
+    vertical-align: bottom;
 }
 
 ._864_576 {
@@ -172,6 +176,7 @@
     background-position-y: center;
     background-size: cover;
     overflow: hidden;
+    vertical-align: bottom;
 }
 
 ._864_720 {
@@ -183,6 +188,7 @@
     background-position-y: center;
     background-size: cover;
     overflow: hidden;
+    vertical-align: bottom;
 }
 
 
@@ -208,6 +214,7 @@
     background-position-y: center;
     background-size: cover;
     overflow: hidden;
+    vertical-align: bottom;
 }
 
 ._960_2016 {
@@ -232,6 +239,7 @@
     background-position-y: center;
     background-size: cover;
     overflow: hidden;
+    vertical-align: bottom;
 }
 
 ._1080_600 {
@@ -243,6 +251,7 @@
     background-position-y: center;
     background-size: cover;
     overflow: hidden;
+    vertical-align: bottom;
 }
 
 ._1088_576 {
@@ -254,6 +263,7 @@
     background-position-y: center;
     background-size: cover;
     overflow: hidden;
+    vertical-align: bottom;
 }
 
 ._1080_1920 {
@@ -278,6 +288,7 @@
     background-position-y: center;
     background-size: cover;
     overflow: hidden;
+    vertical-align: bottom;
 }
 
 ._1152_704 {
@@ -289,6 +300,7 @@
     background-position-y: center;
     background-size: cover;
     overflow: hidden;
+    vertical-align: bottom;
 }
 
 ._1152_720 {
@@ -300,6 +312,7 @@
     background-position-y: center;
     background-size: cover;
     overflow: hidden;
+    vertical-align: bottom;
 }
 
 ._1152_768 {
@@ -311,6 +324,7 @@
     background-position-y: center;
     background-size: cover;
     overflow: hidden;
+    vertical-align: bottom;
 }
 
 ._1280_704 {
@@ -322,6 +336,7 @@
     background-position-y: center;
     background-size: cover;
     overflow: hidden;
+    vertical-align: bottom;
 }
 
 
@@ -334,6 +349,7 @@
     background-position-y: center;
     background-size: cover;
     overflow: hidden;
+    vertical-align: bottom;
 }
 
 ._1440_1080 {
@@ -345,6 +361,7 @@
     background-position-y: center;
     background-size: cover;
     overflow: hidden;
+    vertical-align: bottom;
 }
 
 ._1536_960 {
@@ -356,6 +373,7 @@
     background-position-y: center;
     background-size: cover;
     overflow: hidden;
+    vertical-align: bottom;
 }
 
 ._1548_946 {
@@ -367,6 +385,7 @@
     background-position-y: center;
     background-size: cover;
     overflow: hidden;
+    vertical-align: bottom;
 }
 
 
@@ -379,6 +398,7 @@
     background-position-y: center;
     background-size: cover;
     overflow: hidden;
+    vertical-align: bottom;
 }
 
 ._1920_1152 {
@@ -390,6 +410,7 @@
     background-position-y: center;
     background-size: cover;
     overflow: hidden;
+    vertical-align: bottom;
 }
 
 ._2160_3840 {
@@ -414,6 +435,7 @@
     background-position-y: center;
     background-size: cover;
     overflow: hidden;
+    vertical-align: bottom;
 }
 
 .i_landscape_v1 {
