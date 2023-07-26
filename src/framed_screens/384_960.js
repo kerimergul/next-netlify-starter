@@ -44,7 +44,7 @@ class _384_960 extends Component {
 
     render() {
         return (
-            <div class="_384_960"
+            <div class="bg_v1"
                 style={style}>
                 {this.state.img !== false ? this.renderImg(this.state.img) : <div></div>}
             </div>

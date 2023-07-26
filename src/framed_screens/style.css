@@ -438,6 +438,19 @@
     vertical-align: bottom;
 }
 
+.bg_v1 {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    background-size: cover;
+    overflow: hidden;
+    text-align: center;
+    vertical-align: bottom;
+}
+
 .i_landscape_v2 {
     width: 20%;
     height: auto;
