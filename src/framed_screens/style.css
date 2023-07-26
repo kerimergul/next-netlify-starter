@@ -439,8 +439,8 @@
 }
 
 .bg_v1 {
-    width: 100%;
-    height: auto;
+    width: auto;
+    height: 100%;
     position: absolute;
     background-repeat: no-repeat;
     background-position-x: center;
