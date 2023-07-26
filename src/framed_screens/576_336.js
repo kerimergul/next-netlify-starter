@@ -44,7 +44,7 @@ class _576_336 extends Component {
 
     render() {
         return (
-            <div class="_576_336"
+            <div class="bg_landscape"
                 style={style}>
                 {this.state.img !== false ? this.renderImg(this.state.img) : <div></div>}
             </div>

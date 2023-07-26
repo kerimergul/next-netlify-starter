@@ -44,7 +44,7 @@ class _768_1152 extends Component {
 
     render() {
         return (
-            <div class="_768_1152"
+            <div class="bg_vertical"
                 style={style}>
                 {this.state.img !== false ? this.renderImg(this.state.img) : <div></div>}
             </div>

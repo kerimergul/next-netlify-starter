@@ -44,7 +44,7 @@ class _1080_1920 extends Component {
 
     render() {
         return (
-            <div class="_1080_1920"
+            <div class="bg_vertical"
                 style={style}>
                 {this.state.img !== false ? this.renderImg(this.state.img) : <div></div>}
             </div>

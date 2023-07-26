@@ -44,7 +44,7 @@ class _1024_640 extends Component {
 
     render() {
         return (
-            <div class="_1024_640"
+            <div class="bg_landscape"
                 style={style}>
                 {this.state.img !== false ? this.renderImg(this.state.img) : <div></div>}
             </div>

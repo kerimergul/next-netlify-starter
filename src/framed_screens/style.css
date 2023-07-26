@@ -438,7 +438,7 @@
     vertical-align: bottom;
 }
 
-.bg_v1 {
+.bg_vertical {
     width: auto;
     height: 100%;
     position: absolute;
@@ -448,6 +448,18 @@
     background-size: cover;
     overflow: hidden;
     text-align: center;
+    vertical-align: bottom;
+}
+
+.bg_landscape {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    background-size: cover;
+    overflow: hidden;
     vertical-align: bottom;
 }
 
