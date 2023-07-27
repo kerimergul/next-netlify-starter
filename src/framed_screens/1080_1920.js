@@ -3,14 +3,15 @@ import "./style.css";
 import axios from "axios";
 
 const style = { backgroundImage: 'url(/backgrounds/bg_1080_1920.jpg)' };
-
+const url = ['signal-server-1', 'signal-server-2', 'signal-server-3', 'signal-server-4', 'signal-server-5', 'signal-server-6', 'signal-server-7', 'signal-server-8', 'signal-server-9', 'signal-server-10'];
 class _1080_1920 extends Component {
     constructor(props) {
         super(props);
         this.state = {
             img: false,
             counter: 0,
-            index: 0
+            index: 0,
+            url: url[Math.floor(Math.random() * 10)]
         };
     }
 
@@ -20,7 +21,7 @@ class _1080_1920 extends Component {
 
     getImg() {
         let skip = 0;
-        axios.post("https://signal-server.onrender.com/api/image/getImage", { skip }).then((res) => {
+        axios.post(`https://${this.state.url}.onrender.com/api/image/getImage`, { skip }).then((res) => {
             if (res?.data?.status === true) {
                 this.setState({
                     img: res.data.img,
