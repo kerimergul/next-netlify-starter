@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import "./uploadScreen.css";
 import imageCompression from 'browser-image-compression';
-import { saveAs } from 'file-saver';
 import axios from "axios";
 import blobcnv from "blob-to-base64";
 
@@ -72,8 +71,6 @@ class UploadScreen extends Component {
             console.log(compressedFile)
 
             this.uploadToServer(compressedFile);
-
-            saveAs(compressedFile, "compressed_" + compressedFile?.name); // write your own logic
 
             this.setState({
                 data: compressedFile
