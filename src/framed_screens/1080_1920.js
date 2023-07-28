@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import "./style.css";
 import axios from "axios";
 
-const style = { backgroundImage: 'url(/backgrounds/bg_1080_1920.jpg)' };
+const style = { backgroundImage: 'url(/backgrounds/bg_1080_1920-min.jpg)' };
 const url = ['signal-server-1', 'signal-server-2', 'signal-server-3', 'signal-server-4', 'signal-server-5', 'signal-server-6', 'signal-server-7', 'signal-server-8', 'signal-server-9', 'signal-server-10'];
 class _1080_1920 extends Component {
     constructor(props) {

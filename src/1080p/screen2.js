@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./screen1.css";
-const style = { backgroundImage: 'url(/backgrounds/screen2_1920.jpg)' };
+// const style = { backgroundImage: 'url(/backgrounds/screen2_1920.jpg)' };
 
 class Screen1 extends Component {
   constructor(props) {
