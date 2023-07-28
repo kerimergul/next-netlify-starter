@@ -20,7 +20,7 @@ class _384_960 extends Component {
 
     getImg() {
         let skip = 0;
-        axios.post("https://signal-server-11.onrender.com/api/image/getImage", { skip }).then((res) => {
+        axios.post("https://signal-server.onrender.com/api/image/getImage", { skip }).then((res) => {
             if (res?.data?.status === true) {
                 this.setState({
                     img: res.data.img,
