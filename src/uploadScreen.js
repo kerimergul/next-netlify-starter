@@ -49,7 +49,6 @@ class UploadScreen extends Component {
 
     async downloadImage(data) {
         console.log(data);
-        saveAs(data, data?.name);
         return;
     }
 
