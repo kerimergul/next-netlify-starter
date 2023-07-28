@@ -427,8 +427,10 @@
 }
 
 ._4092_960 {
-    width: 4092px;
-    height: 960px;
+    width: 85%;
+    height: 85%;
+    top: 0;
+    left: 0;
     position: absolute;
     background-repeat: no-repeat;
     background-position-x: center;

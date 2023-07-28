@@ -44,7 +44,7 @@ class _4092_960 extends Component {
 
     render() {
         return (
-            <div class="bg_landscape"
+            <div class="_4092_960"
                 style={style}>
                 {this.state.img !== false ? this.renderImg(this.state.img) : <div></div>}
             </div>
