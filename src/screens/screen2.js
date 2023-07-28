@@ -12,7 +12,7 @@ class Screen1 extends Component {
   render() {
     return (
       <div class="screen1-body"
-        style={style}>
+        >
       </div>
     );
 

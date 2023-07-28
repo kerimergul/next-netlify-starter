@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./screen1.css";
-// const style = { backgroundImage: 'url(/backgrounds/screen1_1440.jpg)' };
+// const style = { backgroundImage: 'url(/backgrounds/screen2_1440.jpg)' };
 
 class Screen1 extends Component {
   constructor(props) {
@@ -12,7 +12,7 @@ class Screen1 extends Component {
   render() {
     return (
       <div class="screen1-body"
-        style={style}>
+        >
       </div>
     );
 
