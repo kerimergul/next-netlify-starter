@@ -468,13 +468,17 @@
     overflow: hidden;
     text-align: center;
     vertical-align: bottom;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
 }
 
 
 .i_landscape_v2 {
-    width: 20%;
+    width: auto;   /* 20%; */
     height: auto;
-    top: 0%;
+    max-height: -webkit-fill-available;
+    bottom: 0%;
     left: 12.5%;
     position: absolute;
 }
@@ -482,6 +486,7 @@
 .i_landscape_v1 {
     width: 42%;
     height: auto;
+    max-height: -webkit-fill-available;
     top: 0%;
     left: 10%;
     position: absolute;
