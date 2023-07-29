@@ -51,13 +51,9 @@ class App extends Component {
 
   render() {
     console.log(window.location.href);
-    if (window.location.href.includes("/1080p")) {
-      return <LandingScreen1080></LandingScreen1080>
-    } else if (window.location.href.includes("/upload")) {
-      return <UploadScreen></UploadScreen>
-    }
+
     // Dikey
-    else if (window.location.href.includes("/_384_960")) {
+    if (window.location.href.includes("/_384_960")) {
       return <_384_960></_384_960>
     } else if (window.location.href.includes("/_480_720")) {
       return <_480_720></_480_720>
@@ -127,6 +123,9 @@ class App extends Component {
       return <_1920_1152></_1920_1152>
     } else if (window.location.href.includes("/_4092_960")) {
       return <_4092_960></_4092_960>
+    }
+    else if (window.location.href.includes("/upload")) {
+      return <UploadScreen></UploadScreen>
     }
     else {
       return <LandingScreen></LandingScreen>;
