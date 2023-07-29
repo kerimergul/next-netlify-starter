@@ -487,7 +487,7 @@
     width: 42%;
     height: auto;
     max-height: -webkit-fill-available;
-    top: 0%;
+    bottom: 0%;
     left: 10%;
     position: absolute;
 }
