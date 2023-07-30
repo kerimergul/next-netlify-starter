@@ -16,7 +16,7 @@ class _1080_1920 extends Component {
     componentDidMount() {
         this.interval = setInterval(async () => {
             this.getImg();
-        })
+        }, 10000)
     }
 
     getImg() {
