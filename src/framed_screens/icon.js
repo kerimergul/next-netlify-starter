@@ -4,7 +4,7 @@ import axios from "axios";
 
 const style = { backgroundImage: 'url(/backgrounds/bg_1080_1920-min.jpg)' };
 
-class _1080_1920 extends Component {
+class _icon_led extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -36,11 +36,7 @@ class _1080_1920 extends Component {
         })
     }
 
-
-    componentWillUnmount() {
-        clearInterval(this.interval)
-    }
-
+    componentWillUnmount() { }
 
 
     renderImg(img) {
@@ -58,7 +54,7 @@ class _1080_1920 extends Component {
 
     }
 }
-export default _1080_1920;
+export default _icon_led;
 
 
 

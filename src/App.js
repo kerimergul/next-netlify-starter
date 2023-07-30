@@ -18,6 +18,7 @@ import _480_720 from "./framed_screens/480_720";
 import _576_864 from "./framed_screens/576_864";
 import _768_1152 from "./framed_screens/768_1152";
 import _1080_1920 from "./framed_screens/1080_1920";
+import _icon_led from "./framed_screens/icon.js";
 
 
 // Yatay
@@ -50,7 +51,6 @@ class App extends Component {
   }
 
   render() {
-    console.log(window.location.href);
 
     // Dikey
     if (window.location.href.includes("/_384_960")) {
@@ -79,7 +79,9 @@ class App extends Component {
       return <_1080_1920></_1080_1920>
     } else if (window.location.href.includes("/_2160_3840")) {
       return <_2160_3840></_2160_3840>
-    }
+    } else if (window.location.href.includes("/_icon_led")) {
+      return <_icon_led></_icon_led>
+    } 
     // Yatay
     else if (window.location.href.includes("/_576_336")) {
       return <_576_336></_576_336>
