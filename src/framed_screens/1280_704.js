@@ -10,22 +10,27 @@ class _1280_704 extends Component {
         this.state = {
             img: false,
             skip: 0,
+            first: true,
         };
     }
 
     componentDidMount() {
+        if (this.state.first === true) {
+            this.getImg();
+        }
         this.interval = setInterval(async () => {
             this.getImg();
         }, 12000)
     }
 
     getImg() {
-        let skip = this.state.skip;
-        axios.post(`https://signal-server.onrender.com/api/image/getImage`, { skip }).then((res) => {
+        let skip = 0;
+        axios.post("https://signal-server.onrender.com/api/image/getImage", { skip }).then((res) => {
             if (res?.data?.status === true) {
                 this.setState({
                     img: res.data.img,
                     skip: skip + 1,
+                    first: false
                 })
             } else {
                 alert('Resim yüklenirken hata oluştu')
@@ -36,10 +41,7 @@ class _1280_704 extends Component {
         })
     }
 
-
-    componentWillUnmount() {
-        clearInterval(this.interval)
-    }
+    componentWillUnmount() { clearInterval(this.interval) }
 
 
 
