@@ -47,7 +47,7 @@ class _864_432 extends Component {
 
     renderImg(img) {
         let data = `${img?.data}`.replace('"', '').replace('"', '');
-        return <img src={data} alt="image_480" class="i_landscape_864_432"></img>
+        return <img src={data} alt="image_480" class="i_landscape_v1"></img>
     }
 
     render() {
