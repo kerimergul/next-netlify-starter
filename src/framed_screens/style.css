@@ -473,9 +473,19 @@
     justify-content: center;
 }
 
+.i_landscape_864_432 {
+    width: 30%;
+    height: auto;
+    max-height: -webkit-fill-available;
+    bottom: 0%;
+    left: 7.5%;
+    position: absolute;
+}
+
 
 .i_landscape_v2 {
-    width: auto;   /* 20%; */
+    width: auto;
+    /* 20%; */
     height: auto;
     max-height: -webkit-fill-available;
     bottom: 0%;
