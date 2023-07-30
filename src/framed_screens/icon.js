@@ -16,7 +16,7 @@ class _icon_led extends Component {
     componentDidMount() {
         this.interval = setInterval(async () => {
             this.getImg();
-        })
+        }, 12000)
     }
 
     getImg() {
@@ -36,7 +36,13 @@ class _icon_led extends Component {
         })
     }
 
-    componentWillUnmount() { }
+
+    componentWillUnmount() {
+        clearInterval(this.interval)
+    }
+
+
+
 
 
     renderImg(img) {

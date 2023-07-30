@@ -9,21 +9,23 @@ class _576_336 extends Component {
         super(props);
         this.state = {
             img: false,
-            counter: 0,
-            index: 0
+            skip: 0,
         };
     }
 
     componentDidMount() {
-        this.getImg();
+        this.interval = setInterval(async () => {
+            this.getImg();
+        }, 12000)
     }
 
     getImg() {
-        let skip = 0;
-        axios.post("https://signal-server.onrender.com/api/image/getImage", { skip }).then((res) => {
+        let skip = this.state.skip;
+        axios.post(`https://signal-server.onrender.com/api/image/getImage`, { skip }).then((res) => {
             if (res?.data?.status === true) {
                 this.setState({
                     img: res.data.img,
+                    skip: skip + 1,
                 })
             } else {
                 alert('Resim yüklenirken hata oluştu')
@@ -34,7 +36,12 @@ class _576_336 extends Component {
         })
     }
 
-    componentWillUnmount() { }
+
+    componentWillUnmount() {
+        clearInterval(this.interval)
+    }
+
+
 
 
     renderImg(img) {

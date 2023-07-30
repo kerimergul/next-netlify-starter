@@ -9,13 +9,14 @@ class _480_720 extends Component {
         super(props);
         this.state = {
             img: false,
-            counter: 0,
-            index: 0
+            skip: 0,
         };
     }
 
     componentDidMount() {
-        this.getImg();
+        this.interval = setInterval(async () => {
+            this.getImg();
+        }, 12000)
     }
 
     getImg() {
@@ -24,6 +25,7 @@ class _480_720 extends Component {
             if (res?.data?.status === true) {
                 this.setState({
                     img: res.data.img,
+                    skip: skip + 1,
                 })
             } else {
                 alert('Resim yüklenirken hata oluştu')
@@ -34,7 +36,9 @@ class _480_720 extends Component {
         })
     }
 
-    componentWillUnmount() { }
+    componentWillUnmount() {
+        clearInterval(this.interval)
+    }
 
 
     renderImg(img) {
