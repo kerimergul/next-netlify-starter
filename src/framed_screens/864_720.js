@@ -22,9 +22,7 @@ class _864_720 extends Component {
             this.getImg();
         }, 12000)
     }
-    componentDidUpdate(prevProps, prevState) {
-        this.setImgHeigth();
-    }
+
     getImg() {
         let skip = this.state.skip;
         axios.post("https://signal-server.onrender.com/api/image/getImage", { skip }).then((res) => {
@@ -44,7 +42,8 @@ class _864_720 extends Component {
     }
 
     componentWillUnmount() { clearInterval(this.interval) }
-    
+
+ 
     setImgHeigth() {
         const resim = document.getElementById('img');
         const sayfaYukseklik = window.innerHeight;
@@ -54,19 +53,18 @@ class _864_720 extends Component {
             resim.style.left = '-7.5%';
             resim.style.width = '60%';
             resim.style.maxWidth = '60%';
+            resim.style.bottom = '0';
         } else {
             const yeniResimYukseklik = resim.clientHeight;
-            if (yeniResimYukseklik == sayfaYukseklik) {
+            if (yeniResimYukseklik >= sayfaYukseklik) {
                 resim.style.bottom = '-4%';
             }
         }
     }
 
-
-
     renderImg(img) {
         let data = `${img?.data}`.replace('"', '').replace('"', '');
-        return <img id='img' src={data} alt="image_480" class="i_landscape_v3" onLoad={this.componentDidUpdate}></img>
+        return <img id='img' src={data} alt="image_480" class="i_landscape_v3" onLoad={this.setImgHeigth}></img>
     }
 
     render() {

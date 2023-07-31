@@ -41,9 +41,7 @@ class _1440_1080 extends Component {
         })
     }
 
-    componentDidUpdate(prevProps, prevState) {
-        this.setImgHeigth();
-    }
+
 
     componentWillUnmount() { clearInterval(this.interval) }
 
@@ -56,9 +54,10 @@ class _1440_1080 extends Component {
             resim.style.left = '-7.5%';
             resim.style.width = '60%';
             resim.style.maxWidth = '60%';
-        }else {
+            resim.style.bottom = '0';
+        } else {
             const yeniResimYukseklik = resim.clientHeight;
-            if (yeniResimYukseklik == sayfaYukseklik) {
+            if (yeniResimYukseklik >= sayfaYukseklik) {
                 resim.style.bottom = '-4%';
             }
         }
@@ -66,7 +65,7 @@ class _1440_1080 extends Component {
 
     renderImg(img) {
         let data = `${img?.data}`.replace('"', '').replace('"', '');
-        return <img id='img' src={data} alt="image_480" class="i_landscape_v3" onLoad={this.componentDidUpdate}></img>
+        return <img id='img' src={data} alt="image_480" class="i_landscape_v3" onLoad={this.setImgHeigth}></img>
     }
 
     render() {
