@@ -24,7 +24,7 @@ class _1440_1080 extends Component {
     }
 
     getImg() {
-        let skip = 0;
+        let skip = this.state.skip;
         axios.post("https://signal-server.onrender.com/api/image/getImage", { skip }).then((res) => {
             if (res?.data?.status === true) {
                 this.setState({
@@ -43,10 +43,21 @@ class _1440_1080 extends Component {
 
     componentWillUnmount() { clearInterval(this.interval) }
 
+    setImgHeigth() {
+        const resim = document.getElementById('img');
+        const sayfaYukseklik = window.innerHeight;
+        const resimYukseklik = resim.clientHeight;
+
+        if (resimYukseklik < sayfaYukseklik * 0.85) {
+            resim.style.left = '-7.5%';
+            resim.style.width = '60%';
+            resim.style.maxWidth = '60%';
+        }
+    }
 
     renderImg(img) {
         let data = `${img?.data}`.replace('"', '').replace('"', '');
-        return <img src={data} alt="image_480" class="i_landscape_v3"></img>
+        return <img id='img' src={data} alt="image_480" class="i_landscape_v3" onLoad={this.setImgHeigth}></img>
     }
 
     render() {
