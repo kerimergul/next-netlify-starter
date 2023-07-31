@@ -23,9 +23,7 @@ class _864_576 extends Component {
         }, 12000)
     }
 
-    componentDidUpdate(prevProps, prevState) {
-        this.setImgHeigth();
-    }
+ 
 
     getImg() {
         let skip = this.state.skip;
@@ -51,7 +49,7 @@ class _864_576 extends Component {
 
     renderImg(img) {
         let data = `${img?.data}`.replace('"', '').replace('"', '');
-        return <img id="img" src={data} alt="image_480" class="i_landscape_v3" onLoad={this.componentDidUpdate}></img>
+        return <img id="img" src={data} alt="image_480" class="i_landscape_v3" onLoad={this.setImgHeigth}></img>
     }
 
     setImgHeigth() {
