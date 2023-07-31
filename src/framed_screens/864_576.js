@@ -23,7 +23,7 @@ class _864_576 extends Component {
         }, 12000)
     }
 
- 
+
 
     getImg() {
         let skip = this.state.skip;
@@ -65,6 +65,8 @@ class _864_576 extends Component {
             const yeniResimYukseklik = resim.clientHeight;
             if (yeniResimYukseklik == sayfaYukseklik) {
                 resim.style.bottom = '-4%';
+            } else {
+                resim.style.bottom = '0%';
             }
         }
     }
