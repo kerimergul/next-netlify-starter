@@ -49,6 +49,8 @@ import _4092_960_v3 from "./framed_screens/4092_960_3";
 import _4092_960_v4 from "./framed_screens/4092_960_4";
 import _4092_960_v5 from "./framed_screens/4092_960_5";
 import _4092_960_v6 from "./framed_screens/4092_960_6";
+import _4092_960_v7 from "./framed_screens/4092_960_7";
+import _4092_960_v8 from "./framed_screens/4092_960_8";
 
 
 class App extends Component {
@@ -105,6 +107,12 @@ class App extends Component {
     }
     else if (window.location.href.includes("/_4092_960_v6")) {
       return <_4092_960_v6></_4092_960_v6>
+    }
+    else if (window.location.href.includes("/_4092_960_v7")) {
+      return <_4092_960_v7></_4092_960_v7>
+    }
+    else if (window.location.href.includes("/_4092_960_v8")) {
+      return <_4092_960_v8></_4092_960_v8>
     }
     // Yatay
     else if (window.location.href.includes("/_576_336")) {

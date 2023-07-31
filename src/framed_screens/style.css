@@ -518,6 +518,29 @@
     vertical-align: bottom;
 }
 
+._4092_960_v7 {
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-size: contain;
+    overflow: hidden;
+    vertical-align: bottom;
+}
+._4092_960_v8 {
+    width: 100%;
+    height: 97.5%;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    background-position-y: center;
+    background-size: contain;
+    overflow: hidden;
+    vertical-align: bottom;
+}
 
 .bg_landscape {
     width: 100%;

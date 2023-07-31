@@ -218,3 +218,14 @@
   to = "/"
   status = 200
 
+[[redirects]]
+  from = "/_4092_960_v7"
+  to = "/"
+  status = 200
+
+[[redirects]]
+  from = "/_4092_960_v8"
+  to = "/"
+  status = 200
+
+
