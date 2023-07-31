@@ -188,3 +188,33 @@
   to = "/"
   status = 200
 
+[[redirects]]
+  from = "/_4092_960_v6"
+  to = "/"
+  status = 200
+
+[[redirects]]
+  from = "/_4092_960_v2"
+  to = "/"
+  status = 200
+
+[[redirects]]
+  from = "/_4092_960_v3"
+  to = "/"
+  status = 200
+
+[[redirects]]
+  from = "/_4092_960_v4"
+  to = "/"
+  status = 200
+
+[[redirects]]
+  from = "/_4092_960_v5"
+  to = "/"
+  status = 200
+
+[[redirects]]
+  from = "/_4092_960_v6"
+  to = "/"
+  status = 200
+
