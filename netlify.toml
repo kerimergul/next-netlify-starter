@@ -9,10 +9,14 @@
   status = 200
 
 [[redirects]]
-  from = "/_384_960"
+  from = "/_icon_led"
   to = "/"
   status = 200
 
+[[redirects]]
+  from = "/_384_960"
+  to = "/"
+  status = 200
 
 [[redirects]]
   from = "/_480_720"
