@@ -447,9 +447,8 @@
     left: 0;
     position: absolute;
     background-repeat: no-repeat;
-    background-position-x: center;
     background-position-y: center;
-    background-size: cover;
+    background-size: contain;
     overflow: hidden;
     vertical-align: bottom;
 }
@@ -461,9 +460,8 @@
     left: 0;
     position: absolute;
     background-repeat: no-repeat;
-    background-position-x: center;
     background-position-y: center;
-    background-size: cover;
+    background-size: contain;
     overflow: hidden;
     vertical-align: bottom;
 }
@@ -475,9 +473,8 @@
     left: 0;
     position: absolute;
     background-repeat: no-repeat;
-    background-position-x: center;
     background-position-y: center;
-    background-size: cover;
+    background-size: contain;
     overflow: hidden;
     vertical-align: bottom;
 }
@@ -489,9 +486,8 @@
     left: 0;
     position: absolute;
     background-repeat: no-repeat;
-    background-position-x: center;
     background-position-y: center;
-    background-size: cover;
+    background-size: contain;
     overflow: hidden;
     vertical-align: bottom;
 }
@@ -503,9 +499,8 @@
     left: 0;
     position: absolute;
     background-repeat: no-repeat;
-    background-position-x: center;
     background-position-y: center;
-    background-size: cover;
+    background-size: contain;
     overflow: hidden;
     vertical-align: bottom;
 }
@@ -517,9 +512,8 @@
     left: 0;
     position: absolute;
     background-repeat: no-repeat;
-    background-position-x: center;
     background-position-y: center;
-    background-size: cover;
+    background-size: contain;
     overflow: hidden;
     vertical-align: bottom;
 }
