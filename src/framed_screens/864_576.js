@@ -60,11 +60,7 @@ class _864_576 extends Component {
             resim.style.width = '60%';
             resim.style.maxWidth = '60%';
         }
-        const resimYukseklikYeni = resim.clientHeight;
-
-        if (resimYukseklikYeni == sayfaYukseklik) {
-            resim.style.top = '2.5%%';
-        }
+        this.setTopMargin();
     }
 
     setTopMargin() {
