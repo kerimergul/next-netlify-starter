@@ -4,7 +4,7 @@ import axios from "axios";
 
 const style = { backgroundImage: 'url(/backgrounds/bg_4092_960.jpg)' };
 
-class _4092_960 extends Component {
+class _4092_960_v4 extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -59,4 +59,4 @@ class _4092_960 extends Component {
 
     }
 }
-export default _4092_960;
+export default _4092_960_v4;

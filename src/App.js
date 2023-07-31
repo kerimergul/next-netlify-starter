@@ -43,6 +43,12 @@ import _1548_946 from "./framed_screens/1548_946";
 import _1920_1080 from "./framed_screens/1920_1080";
 import _1920_1152 from "./framed_screens/1920_1152";
 import _4092_960 from "./framed_screens/4092_960";
+import _4092_960_v1 from "./framed_screens/4092_960_1";
+import _4092_960_v2 from "./framed_screens/4092_960_2";
+import _4092_960_v3 from "./framed_screens/4092_960_3";
+import _4092_960_v4 from "./framed_screens/4092_960_4";
+import _4092_960_v5 from "./framed_screens/4092_960_5";
+import _4092_960_v6 from "./framed_screens/4092_960_6";
 
 
 class App extends Component {
@@ -81,7 +87,25 @@ class App extends Component {
       return <_2160_3840></_2160_3840>
     } else if (window.location.href.includes("/_icon_led")) {
       return <_icon_led></_icon_led>
-    } 
+    }
+    else if (window.location.href.includes("/_4092_960_v1")) {
+      return <_4092_960_v1></_4092_960_v1>
+    }
+    else if (window.location.href.includes("/_4092_960_v2")) {
+      return <_4092_960_v2></_4092_960_v2>
+    }
+    else if (window.location.href.includes("/_4092_960_v3")) {
+      return <_4092_960_v3></_4092_960_v3>
+    }
+    else if (window.location.href.includes("/_4092_960_v4")) {
+      return <_4092_960_v4></_4092_960_v4>
+    }
+    else if (window.location.href.includes("/_4092_960_v5")) {
+      return <_4092_960_v5></_4092_960_v5>
+    }
+    else if (window.location.href.includes("/_4092_960_v6")) {
+      return <_4092_960_v6></_4092_960_v6>
+    }
     // Yatay
     else if (window.location.href.includes("/_576_336")) {
       return <_576_336></_576_336>
