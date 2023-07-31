@@ -189,7 +189,7 @@
   status = 200
 
 [[redirects]]
-  from = "/_4092_960_v6"
+  from = "/_4092_960_v1"
   to = "/"
   status = 200
 
