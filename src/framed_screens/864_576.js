@@ -63,8 +63,11 @@ class _864_576 extends Component {
             resim.style.left = '-7.5%';
             resim.style.width = '60%';
             resim.style.maxWidth = '60%';
-        } else if (resimYukseklik == sayfaYukseklik) {
-            resim.style.top = '2.5%%';
+        } else {
+            const yeniResimYukseklik = resim.clientHeight;
+            if (yeniResimYukseklik == sayfaYukseklik) {
+                resim.style.bottom = '-4%';
+            }
         }
     }
 
