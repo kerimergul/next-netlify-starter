@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import "./style.css";
 import axios from "axios";
 
-const style = { backgroundImage: 'url(/backgrounds/bg_4092_960.jpg)' };
+const style = { backgroundImage: 'url(/backgrounds/bg_4092_960-min.jpg)' };
 
 class _4092_960 extends Component {
     constructor(props) {
