@@ -37,6 +37,7 @@ import _1152_704 from "./framed_screens/1152_704";
 import _1152_720 from "./framed_screens/1152_720";
 import _1152_768 from "./framed_screens/1152_768";
 import _1280_704 from "./framed_screens/1280_704";
+import _1280_800 from "./framed_screens/1280_800";
 import _1440_1080 from "./framed_screens/1440_1080";
 import _1536_960 from "./framed_screens/1536_960";
 import _1548_946 from "./framed_screens/1548_946";
@@ -145,6 +146,8 @@ class App extends Component {
       return <_1152_768></_1152_768>
     } else if (window.location.href.includes("/_1280_704")) {
       return <_1280_704></_1280_704>
+    } else if (window.location.href.includes('/_1280_800')) {
+      return <_1280_800></_1280_800>
     } else if (window.location.href.includes("/_1440_1080")) {
       return <_1440_1080></_1440_1080>
     } else if (window.location.href.includes("/_1536_960")) {
