@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import "./style.css";
 import axios from "axios";
 
-const style = { backgroundImage: 'url(/backgrounds/bg_1280_800-min.jpg)' };
+const style = { backgroundImage: 'url(/backgrounds/bg_1152_720-min.jpg)' };
 
 class _1280_800 extends Component {
     constructor(props) {
@@ -43,11 +43,21 @@ class _1280_800 extends Component {
 
     componentWillUnmount() { clearInterval(this.interval) }
 
+    setImgHeight() {
+        const resim = document.getElementById('img');
+        const yukselik = window.innerHeight;
+        const resimYukseklik = resim.clientHeight;
+
+        if (resimYukseklik < yukselik * 0.85) {
+            resim.style.left = '-5%';
+            resim.style.width = '55%';
+        }
+    }
 
 
     renderImg(img) {
         let data = `${img?.data}`.replace('"', '').replace('"', '');
-        return <img src={data} alt="image_480" class="i"></img>
+        return <img id='img' src={data} alt="image_480" class="i" onLoad={this.setImgHeight}></img>
     }
 
     render() {
