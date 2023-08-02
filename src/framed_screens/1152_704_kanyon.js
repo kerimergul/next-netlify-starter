@@ -25,7 +25,7 @@ class _1152_704_Kanyon extends Component {
 
     getImg() {
         let skip = this.state.skip;
-        axios.post("https://www.tesvik-sgk.com/signal/api/image/getImage", { skip }).then((res) => {
+        axios.post("https://www.tesvik-sgk.com/signal/api/image/getImageKanyon", { skip }).then((res) => {
             if (res?.data?.status === true) {
                 this.setState({
                     img: res.data.img,
