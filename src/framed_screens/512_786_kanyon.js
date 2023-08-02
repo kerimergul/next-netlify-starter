@@ -2,9 +2,9 @@ import React, { Component } from "react";
 import "./style.css";
 import axios from "axios";
 
-const style = { backgroundImage: 'url(/backgrounds/bg_576_864-min.jpg)' };
+const style = { backgroundImage: 'url(/backgrounds/bg_512_786-min.jpg)' };
 
-class _576_864 extends Component {
+class _512_786_Kanyon extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -62,4 +62,4 @@ class _576_864 extends Component {
 
     }
 }
-export default _576_864;
+export default _512_786_Kanyon;

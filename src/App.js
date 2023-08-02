@@ -3,10 +3,13 @@ import React, { Component } from "react";
 import LandingScreen from "./screens/landingScreen";
 import LandingScreen1080 from "./1080p/landingScreen1080p";
 import UploadScreen from "./uploadScreen.js";
-
+import UploadBagdatScreen from "./uploadBagdat.js";
+import UploadKanyonScreen from "./uploadKanyon.js";
+import UploadZorluScreen from "./uploadZorlu.js";
 // Dikey
 import _384_960 from "./framed_screens/384_960";
 import _512_786 from "./framed_screens/512_786";
+import _512_786_Kanyon from "./framed_screens/512_786_kanyon";
 import _624_1040 from "./framed_screens/624_1040";
 import _640_1120 from "./framed_screens/640_1120";
 import _640_1140 from "./framed_screens/640_1140";
@@ -14,10 +17,13 @@ import _768_1344 from "./framed_screens/768_1344";
 import _864_1440 from "./framed_screens/864_1440";
 import _960_2016 from "./framed_screens/960_2016";
 import _2160_3840 from "./framed_screens/2160_3840";
+import _2160_3840_Bagdat from "./framed_screens/2160_3840_bagdat";
 import _480_720 from "./framed_screens/480_720";
 import _576_864 from "./framed_screens/576_864";
 import _768_1152 from "./framed_screens/768_1152";
 import _1080_1920 from "./framed_screens/1080_1920";
+import _1080_1920_Zorlu from "./framed_screens/1080_1920_zorlu";
+import _1080_1920_Kanyon from "./framed_screens/1080_1920_kanyon";
 import _icon_led from "./framed_screens/icon.js";
 
 
@@ -28,21 +34,28 @@ import _720_480 from "./framed_screens/720_480";
 import _864_432 from "./framed_screens/864_432";
 import _864_576 from "./framed_screens/864_576";
 import _864_720 from "./framed_screens/864_720";
+import _864_720_Kanyon from "./framed_screens/846_720_kanyon";
 import _960_640 from "./framed_screens/960_640";
 import _1024_640 from "./framed_screens/1024_640";
 import _1080_600 from "./framed_screens/1080_600";
 import _1088_576 from "./framed_screens/1088_576";
 import _1152_640 from "./framed_screens/1152_640";
 import _1152_704 from "./framed_screens/1152_704";
+import _1152_704_Kanyon from "./framed_screens/1152_704_kanyon";
 import _1152_720 from "./framed_screens/1152_720";
 import _1152_768 from "./framed_screens/1152_768";
 import _1280_704 from "./framed_screens/1280_704";
+import _1280_704_Kanyon from "./framed_screens/1280_704_kanyon";
 import _1280_800 from "./framed_screens/1280_800";
 import _1440_1080 from "./framed_screens/1440_1080";
+import _1440_1080_Zorlu from "./framed_screens/1440_1080_zorlu";
 import _1536_960 from "./framed_screens/1536_960";
 import _1548_946 from "./framed_screens/1548_946";
+import _1548_946_Kanyon from "./framed_screens/1548_946_kanyon";
 import _1920_1080 from "./framed_screens/1920_1080";
+import _1920_1080_Zorlu from "./framed_screens/1920_1080_zorlu";
 import _1920_1152 from "./framed_screens/1920_1152";
+import _1920_1152_Kanyon from "./framed_screens/1920_1152_kanyon";
 import _4092_960 from "./framed_screens/4092_960";
 import _4092_960_v1 from "./framed_screens/4092_960_1";
 import _4092_960_v2 from "./framed_screens/4092_960_2";
@@ -61,8 +74,50 @@ class App extends Component {
 
   render() {
 
+    //UPLOAD
+
+    if (window.location.href.includes("/uploadKanyon")) {
+      return <UploadKanyonScreen></UploadKanyonScreen>
+    } else if (window.location.href.includes("/uploadZorlu")) {
+      return <UploadZorluScreen></UploadZorluScreen>
+    } else if (window.location.href.includes("/uploadBagdat")) {
+      return <UploadBagdatScreen></UploadBagdatScreen>
+    }
+
+    // SADECE ZORLU
+    else if (window.location.href.includes("/_1080_1920_Zorlu")) {
+      return <_1080_1920_Zorlu></_1080_1920_Zorlu>
+    } else if (window.location.href.includes("/_1440_1080_Zorlu")) {
+      return <_1440_1080_Zorlu></_1440_1080_Zorlu>
+    } else if (window.location.href.includes("/_1920_1080_Zorlu")) {
+      return <_1920_1080_Zorlu></_1920_1080_Zorlu>
+    }
+
+    // SADECE KANYON
+    else if (window.location.href.includes("/_864_720_Kanyon")) {
+      return <_864_720_Kanyon></_864_720_Kanyon>
+    } else if (window.location.href.includes("/_1920_1152_Kanyon")) {
+      return <_1920_1152_Kanyon></_1920_1152_Kanyon>
+    } else if (window.location.href.includes("/_1152_704_Kanyon")) {
+      return <_1152_704_Kanyon></_1152_704_Kanyon>
+    } else if (window.location.href.includes("/_1280_704_Kanyon")) {
+      return <_1280_704_Kanyon></_1280_704_Kanyon>
+    } else if (window.location.href.includes("/_1548_946_Kanyon")) {
+      return <_1548_946_Kanyon></_1548_946_Kanyon>
+    } else if (window.location.href.includes("/_512_786_Kanyon")) {
+      return <_512_786_Kanyon></_512_786_Kanyon>
+    } else if (window.location.href.includes("/_1080_1920_Kanyon")) {
+      return <_1080_1920_Kanyon></_1080_1920_Kanyon>
+    }
+    // SADECE BAĞDAT 
+
+    else if (window.location.href.includes("/_2160_3840_Bagdat")) {
+      return <_2160_3840_Bagdat></_2160_3840_Bagdat>
+    }
+
+
     // Dikey
-    if (window.location.href.includes("/_384_960")) {
+    else if (window.location.href.includes("/_384_960")) {
       return <_384_960></_384_960>
     } else if (window.location.href.includes("/_480_720")) {
       return <_480_720></_480_720>
@@ -84,7 +139,8 @@ class App extends Component {
       return <_864_1440></_864_1440>
     } else if (window.location.href.includes("/_960_2016")) {
       return <_960_2016></_960_2016>
-    } else if (window.location.href.includes("/_1080_1920")) {
+    }
+    else if (window.location.href.includes("/_1080_1920")) {
       return <_1080_1920></_1080_1920>
     } else if (window.location.href.includes("/_2160_3840")) {
       return <_2160_3840></_2160_3840>

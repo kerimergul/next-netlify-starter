@@ -38,7 +38,7 @@ class _576_336 extends Component {
 
     getImg() {
         let skip = this.state.skip;
-        axios.post("https://signal-server.onrender.com/api/image/getImage", { skip }).then((res) => {
+        axios.post("https://www.tesvik-sgk.com/signal/api/image/getImage", { skip }).then((res) => {
             if (res?.data?.status === true) {
                 this.setState({
                     img: res.data.img,

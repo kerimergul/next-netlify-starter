@@ -7,7 +7,7 @@ import blobcnv from "blob-to-base64";
 const specs = [{ width: 1080, height: 1920 }, { width: 480, height: 720 }, { width: 576, height: 864 }, { width: 768, height: 1152 }];
 
 
-class UploadScreen extends Component {
+class UploadBagdatScreen extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -29,7 +29,8 @@ class UploadScreen extends Component {
                 if (error) {
                     throw error;
                 }
-                axios.post("https://www.tesvik-sgk.com/signal/api/image/upload", { img }).then((res) => {
+
+                axios.post("https://www.tesvik-sgk.com/signal/api/image/uploadBagdat", { img }).then((res) => {
                     console.log(res);
                     if (res?.data?.status === true) {
                         alert("Resim başarıyla yüklendi");
@@ -106,7 +107,7 @@ class UploadScreen extends Component {
             <div class="col">
                 <div class="container">
                     <div class="card">
-                        <h3>Resim Yükle</h3>
+                        <h3>CaddeBostan için Resim Yükle</h3>
                         <div class="drop_box">
                             <header>
                                 <h4>Dosyayı seçiniz</h4>
@@ -127,4 +128,4 @@ class UploadScreen extends Component {
         );
     }
 }
-export default UploadScreen;
+export default UploadBagdatScreen;

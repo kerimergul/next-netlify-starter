@@ -2,9 +2,9 @@ import React, { Component } from "react";
 import "./style.css";
 import axios from "axios";
 
-const style = { backgroundImage: 'url(/backgrounds/bg_576_864-min.jpg)' };
+const style = { backgroundImage: 'url(/backgrounds/bg_1152_704-min.jpg)' };
 
-class _576_864 extends Component {
+class _1152_704_Kanyon extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -43,18 +43,24 @@ class _576_864 extends Component {
 
     componentWillUnmount() { clearInterval(this.interval) }
 
+    setImgHeigth() {
+        const resim = document.getElementById('img');
+        const sayfaYukseklik = window.innerHeight;
+        const resimYukseklik = resim.clientHeight;
 
-
-
-
+        if (resimYukseklik < sayfaYukseklik * 0.85) {
+            resim.style.left = '-5%';
+            resim.style.width = '55%';
+        }
+    }
     renderImg(img) {
         let data = `${img?.data}`.replace('"', '').replace('"', '');
-        return <img src={data} alt="image_480" class="i_v1"></img>
+        return <img id="img" src={data} alt="image_480" class="i_landscape_v1" onLoad={this.setImgHeigth}></img>
     }
 
     render() {
         return (
-            <div class="bg_vertical"
+            <div class="bg_landscape"
                 style={style}>
                 {this.state.img !== false ? this.renderImg(this.state.img) : <div></div>}
             </div>
@@ -62,4 +68,4 @@ class _576_864 extends Component {
 
     }
 }
-export default _576_864;
+export default _1152_704_Kanyon;

@@ -4,7 +4,7 @@ import axios from "axios";
 
 const style = { backgroundImage: 'url(/backgrounds/bg_1080_1920-min.jpg)' };
 
-class _icon_led extends Component {
+class _1080_1920_Zorlu extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -20,7 +20,7 @@ class _icon_led extends Component {
         }
         this.interval = setInterval(async () => {
             this.getImg();
-        }, 22000)
+        }, 12000)
     }
 
     getImg() {
@@ -44,6 +44,7 @@ class _icon_led extends Component {
     componentWillUnmount() { clearInterval(this.interval) }
 
 
+
     renderImg(img) {
         let data = `${img?.data}`.replace('"', '').replace('"', '');
         return <img src={data} alt="image_480" class="i_v1"></img>
@@ -59,7 +60,7 @@ class _icon_led extends Component {
 
     }
 }
-export default _icon_led;
+export default _1080_1920_Zorlu;
 
 
 

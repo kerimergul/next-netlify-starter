@@ -2,9 +2,9 @@ import React, { Component } from "react";
 import "./style.css";
 import axios from "axios";
 
-const style = { backgroundImage: 'url(/backgrounds/bg_576_864-min.jpg)' };
+const style = { backgroundImage: 'url(/backgrounds/bg_2160_3840-min.jpg)' };
 
-class _576_864 extends Component {
+class _2160_3840_Bagdat extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -46,7 +46,6 @@ class _576_864 extends Component {
 
 
 
-
     renderImg(img) {
         let data = `${img?.data}`.replace('"', '').replace('"', '');
         return <img src={data} alt="image_480" class="i_v1"></img>
@@ -62,4 +61,4 @@ class _576_864 extends Component {
 
     }
 }
-export default _576_864;
+export default _2160_3840_Bagdat;
