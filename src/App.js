@@ -36,6 +36,7 @@ import _864_576 from "./framed_screens/864_576";
 import _864_720 from "./framed_screens/864_720";
 import _864_720_Kanyon from "./framed_screens/846_720_kanyon";
 import _960_640 from "./framed_screens/960_640";
+import _1024_460_Kanyon from "./framed_screens/1024_460_kanyon";
 import _1024_640 from "./framed_screens/1024_640";
 import _1080_600 from "./framed_screens/1080_600";
 import _1088_576 from "./framed_screens/1088_576";
@@ -108,6 +109,8 @@ class App extends Component {
       return <_512_786_Kanyon></_512_786_Kanyon>
     } else if (window.location.href.includes("/_1080_1920_Kanyon")) {
       return <_1080_1920_Kanyon></_1080_1920_Kanyon>
+    } else if (window.location.href.includes("/_1024_460_Kanyon")) {
+      return <_1024_460_Kanyon></_1024_460_Kanyon>
     }
     // SADECE BAĞDAT 
 

@@ -74,6 +74,11 @@
   status = 200
 
 [[redirects]]
+  from = "/_1024_460_Kanyon"
+  to = "/"
+  status = 200
+
+[[redirects]]
   from = "/_2160_3840_Bagdat"
   to = "/"
   status = 200
