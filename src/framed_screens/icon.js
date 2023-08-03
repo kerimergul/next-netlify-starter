@@ -46,7 +46,7 @@ class _icon_led extends Component {
 
     renderImg(img) {
         let data = `${img?.data}`.replace('"', '').replace('"', '');
-        return <img src={data} alt="image_480" class="i_v1"></img>
+        return <img id='img' src={data} alt="image_480" class="i_v1" onLoad={this.setImageWidth()} ></img>
     }
 
     render() {
