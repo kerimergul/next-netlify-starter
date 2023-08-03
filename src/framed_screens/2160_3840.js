@@ -49,9 +49,7 @@ class _2160_3840 extends Component {
         const resimGenislik = resim.clientWidth;
 
         if (resimGenislik < sayfaGenislik) {
-            resim.style.height = '72%';
-            resim.style.maxHeight = '72%';
-            resim.style.top = '35%';
+            resim.width = '100%';
         }
     }
 
@@ -59,7 +57,7 @@ class _2160_3840 extends Component {
 
     renderImg(img) {
         let data = `${img?.data}`.replace('"', '').replace('"', '');
-        return <img id='img' src={data} alt="image_480" class="i_v1"  ></img>
+        return <img id='img' src={data} alt="image_480" class="i_v1" onLoad={this.setImageWidth}  ></img>
     }
 
     render() {

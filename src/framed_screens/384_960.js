@@ -52,7 +52,7 @@ class _384_960 extends Component {
             resim.style.height = '72%';
             resim.style.maxHeight = '72%';
             resim.style.top = '35%';
-        } 
+        }
     }
 
     renderImg(img) {

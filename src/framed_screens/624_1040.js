@@ -50,8 +50,8 @@ class _624_1040 extends Component {
         const resimGenislik = resim.clientWidth;
 
         if (resimGenislik < sayfaGenislik) {
-            resim.style.height = '72%';
-            resim.style.maxHeight = '72%';
+            resim.style.height = 'auto';
+            resim.style.width = '100%';
             resim.style.top = '35%';
         } 
     }
@@ -60,7 +60,7 @@ class _624_1040 extends Component {
 
     renderImg(img) {
         let data = `${img?.data}`.replace('"', '').replace('"', '');
-        return <img id='img' src={data} alt="image_480" class="i_v1"  ></img>
+        return <img id='img' src={data} alt="image_480" class="i_v1" onLoad={this.setImageWidth} ></img>
     }
 
     render() {
