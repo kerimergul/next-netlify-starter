@@ -49,7 +49,7 @@ class _2160_3840 extends Component {
         const resimGenislik = resim.clientWidth;
 
         if (resimGenislik < sayfaGenislik) {
-            resim.width = '100%';
+            resim.style.width = '100%';
         }
     }
 
