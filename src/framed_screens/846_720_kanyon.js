@@ -44,22 +44,16 @@ class _864_720_Kanyon extends Component {
     componentWillUnmount() { clearInterval(this.interval) }
 
 
-    setImgHeigth() {
+    setImageWidth() {
         const resim = document.getElementById('img');
-        const sayfaYukseklik = window.innerHeight;
-        const resimYukseklik = resim.clientHeight;
+        const sayfaGenislik = window.innerWidth;
+        const resimGenislik = resim.clientWidth;
 
-        if (resimYukseklik < sayfaYukseklik * 0.85) {
-            resim.style.left = '-7.5%';
-            resim.style.width = '60%';
-            resim.style.maxWidth = '60%';
-            resim.style.bottom = '0';
-        } else {
-            const yeniResimYukseklik = resim.clientHeight;
-            if (yeniResimYukseklik >= sayfaYukseklik) {
-                resim.style.bottom = '-4%';
-            }
-        }
+        if (resimGenislik < sayfaGenislik) {
+            resim.style.height = '72%';
+            resim.style.maxHeight = '72%';
+            resim.style.top = '35%';
+        } 
     }
 
     renderImg(img) {

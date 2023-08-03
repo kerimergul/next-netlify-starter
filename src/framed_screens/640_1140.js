@@ -43,7 +43,6 @@ class _640_1140 extends Component {
 
     componentWillUnmount() { clearInterval(this.interval) }
 
-
     setImageWidth() {
         const resim = document.getElementById('img');
         const sayfaGenislik = window.innerWidth;
@@ -53,11 +52,7 @@ class _640_1140 extends Component {
             resim.style.height = '72%';
             resim.style.maxHeight = '72%';
             resim.style.top = '35%';
-        } else if (resimGenislik >= sayfaGenislik) {
-            resim.style.height = '67%';
-            resim.style.maxHeight = '67%';
-            resim.style.top = '33%';
-        }
+        } 
     }
 
 
