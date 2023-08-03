@@ -60,7 +60,7 @@ class _624_1040 extends Component {
 
     renderImg(img) {
         let data = `${img?.data}`.replace('"', '').replace('"', '');
-        return <img id='img' src={data} alt="image_480" class="i_v1" onLoad={this.setImageWidth} ></img>
+        return <img id='img' src={data} alt="image_480" class="i_v1"  ></img>
     }
 
     render() {
