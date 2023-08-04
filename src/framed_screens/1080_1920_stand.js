@@ -32,7 +32,7 @@ class _1080_1920_Stand extends Component {
                         id="img1"
                     ></img>
                     <img
-                        class='blink'
+                        class='blink-1'
                         src={flash}
                         style={
                             style_img
