@@ -89,6 +89,11 @@
   status = 200
 
 [[redirects]]
+  from = "/_1080_1920_Stand"
+  to = "/"
+  status = 200
+
+[[redirects]]
   from = "/_icon_led"
   to = "/"
   status = 200

@@ -24,6 +24,7 @@ import _768_1152 from "./framed_screens/768_1152";
 import _1080_1920 from "./framed_screens/1080_1920";
 import _1080_1920_Zorlu from "./framed_screens/1080_1920_zorlu";
 import _1080_1920_Kanyon from "./framed_screens/1080_1920_kanyon";
+import _1080_1920_Stand from "./framed_screens/1080_1920_stand";
 import _icon_led from "./framed_screens/icon.js";
 
 
@@ -119,6 +120,9 @@ class App extends Component {
 
     else if (window.location.href.includes("/_2160_3840_Bagdat")) {
       return <_2160_3840_Bagdat></_2160_3840_Bagdat>
+    }
+    else if (window.location.href.includes("/_1080_1920_Stand")) {
+      return <_1080_1920_Stand></_1080_1920_Stand>
     }
 
 
