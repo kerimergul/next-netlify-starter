@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./stand.css";
-
+import header from '../images/gulusunu_goster.jpg';
+import flash from '../images/flash.jpg';
 const style = { backgroundImage: 'url(/backgrounds/bg_1080_1920_stand-min.jpg)' };
 const style_img = {
     width: '100%',
@@ -24,7 +25,7 @@ class _1080_1920_Stand extends Component {
                 <div id="container">
                     <img
                         class='pulsate-fwd'
-                        src={require('../images/gulusunu_goster.jpg')}
+                        src={header}
                         style={
                             style_img
                         }
@@ -32,7 +33,7 @@ class _1080_1920_Stand extends Component {
                     ></img>
                     <img
                         class='blink'
-                        src={require('../images/flash.jpg')}
+                        src={flash}
                         style={
                             style_img
                         }
