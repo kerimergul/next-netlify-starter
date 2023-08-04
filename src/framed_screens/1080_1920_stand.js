@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./stand.css";
-import header from '../images/gulusunu_goster.jpg';
-import flash from '../images/flash.jpg';
+import header from '../images/gulus.png';
+import flash from '../images/flash.png';
 const style = { backgroundImage: 'url(/backgrounds/bg_1080_1920_stand-min.jpg)' };
 const style_img = {
     width: '100%',
