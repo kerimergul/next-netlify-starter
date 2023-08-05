@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import Stand from "./1080_1920_stand";
-import _1080_1920_Kanyon from "./1080_1920_kanyon.js";
+import _1080_1920_Kanyon from "./1080_1920_kanyon";
 
-const photoThreshold = 60;
+const photoThreshold = 90;
 const standThreshold = 10;
 
 class _1080_1920_Kanyon_Switch extends Component {
@@ -11,7 +11,7 @@ class _1080_1920_Kanyon_Switch extends Component {
         this.state = {
             currentView: "stand",
             standTime: 0,
-            photoTime: 60,
+            photoTime: 80,
         };
     }
 
@@ -22,6 +22,7 @@ class _1080_1920_Kanyon_Switch extends Component {
     }
 
     componentWillUnmount() { clearInterval(this.timer) }
+
 
     checkTime() {
         if (this.state.currentView == 'stand' && this.state.standTime >= standThreshold) {
