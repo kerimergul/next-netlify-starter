@@ -2,8 +2,8 @@ import React, { Component } from "react";
 import Stand from "./1080_1920_stand";
 import _1080_1920_Kanyon from "./1080_1920_kanyon";
 
-const photoThreshold = 90;
-const standThreshold = 10;
+const photoThreshold = 150;
+const standThreshold = 350;
 
 class _1080_1920_Kanyon_Switch extends Component {
     constructor(props) {
@@ -11,7 +11,7 @@ class _1080_1920_Kanyon_Switch extends Component {
         this.state = {
             currentView: "stand",
             standTime: 0,
-            photoTime: 80,
+            photoTime: 140,
         };
     }
 
