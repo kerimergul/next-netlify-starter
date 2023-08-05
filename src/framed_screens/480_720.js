@@ -25,6 +25,9 @@ class _480_720 extends Component {
 
     getImg() {
         let skip = this.state.skip;
+        if (skip > 10) {
+            skip = 0;
+        }
         axios.post("https://www.tesvik-sgk.com/signal/api/image/getImage", { skip }).then((res) => {
             if (res?.data?.status === true) {
                 this.setState({
@@ -52,7 +55,7 @@ class _480_720 extends Component {
             resim.style.height = 'auto';
             resim.style.width = '100%';
             resim.style.top = '35%';
-        } 
+        }
     }
 
 

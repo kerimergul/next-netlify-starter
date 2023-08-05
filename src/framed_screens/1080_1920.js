@@ -25,6 +25,9 @@ class _1080_1920 extends Component {
 
     getImg() {
         let skip = this.state.skip;
+        if (skip > 10) {
+            skip = 0;
+        }
         axios.post("https://www.tesvik-sgk.com/signal/api/image/getImage", { skip }).then((res) => {
             if (res?.data?.status === true) {
                 this.setState({
