@@ -69,6 +69,9 @@ import _4092_960_v6 from "./framed_screens/4092_960_6";
 import _4092_960_v7 from "./framed_screens/4092_960_7";
 import _4092_960_v8 from "./framed_screens/4092_960_8";
 
+import _1080_1920_Bagdat_Switch from "./framed_screens/1080_1920_bagdat_switch";
+import _1080_1920_Kanyon_Switch from "./framed_screens/1080_1920_kanyon_switch";
+
 
 class App extends Component {
   constructor(props) {
@@ -85,6 +88,14 @@ class App extends Component {
       return <UploadZorluScreen></UploadZorluScreen>
     } else if (window.location.href.includes("/uploadBagdat")) {
       return <UploadBagdatScreen></UploadBagdatScreen>
+    }
+
+    // SWITCH SCREENS
+
+    else if (window.location.href.includes("/_1080_1920_Kanyon_Switch")) {
+      return <_1080_1920_Kanyon_Switch></_1080_1920_Kanyon_Switch>
+    } else if (window.location.href.includes("/_1080_1920_Bagdat_Switch")) {
+      return <_1080_1920_Bagdat_Switch></_1080_1920_Bagdat_Switch>
     }
 
     // SADECE ZORLU
