@@ -2,8 +2,8 @@ import React, { Component } from "react";
 import Stand from "./1080_1920_stand";
 import _2160_3840_Bagdat from "./2160_3840_bagdat.js";
 
-const photoThreshold = 89;
-const standThreshold = 19;
+const photoThreshold = 60;
+const standThreshold = 10;
 
 class _1080_1920_Bagdat_Switch extends Component {
     constructor(props) {
@@ -11,7 +11,7 @@ class _1080_1920_Bagdat_Switch extends Component {
         this.state = {
             currentView: "stand",
             standTime: 0,
-            photoTime: 90,
+            photoTime: 60,
         };
     }
 
