@@ -21,6 +21,9 @@ class _1080_1920_Bagdat_Switch extends Component {
         }, 10000);
     }
 
+    componentWillUnmount() { clearInterval(this.timer) }
+
+
     checkTime() {
         if (this.state.currentView == 'stand' && this.state.standTime >= standThreshold) {
             this.setState({
