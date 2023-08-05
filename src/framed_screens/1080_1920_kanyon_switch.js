@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Stand from "./1080_1920_stand";
-import _1080_1920_Kanyon from "./_1080_1920_kanyon";
+import _1080_1920_Kanyon from "./1080_1920_kanyon.js";
 
 const photoThreshold = 90;
 const standThreshold = 20;

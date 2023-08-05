@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Stand from "./1080_1920_stand";
-import _1080_1920_Bagdat from "./1080_1920_bagdat";
+import _2160_3840_Bagdat from "./2160_3840_bagdat.js";
 
 const photoThreshold = 90;
 const standThreshold = 20;
