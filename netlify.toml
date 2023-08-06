@@ -34,6 +34,11 @@
   status = 200
 
 [[redirects]]
+  from = "/_1080_1920_Zorlu_Giris"
+  to = "/"
+  status = 200
+
+[[redirects]]
   from = "/_1080_1920_Zorlu"
   to = "/"
   status = 200
