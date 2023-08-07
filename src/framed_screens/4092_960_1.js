@@ -8,49 +8,54 @@ class _4092_960_v1 extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            img: false,
-            skip: 0,
+            img: `../images/0-min.png`,
+            skip: Math.floor(Math.random() * 74),
             first: true,
         };
     }
-
     componentDidMount() {
-        if (this.state.first === true) {
-            this.getImg();
-        }
+        // if (this.state.first === true) {
+        //     this.getImg();
+        // }
         this.interval = setInterval(async () => {
             this.getImg();
-        }, 12000)
+        }, 8000)
     }
 
     getImg() {
         let skip = this.state.skip;
-        if (skip > 10) {
+        if (skip > 74) {
             skip = 0;
         }
-        axios.post("https://www.tesvik-sgk.com/signal/api/image/getImage", { skip }).then((res) => {
-            if (res?.data?.status === true) {
-                this.setState({
-                    img: res.data.img,
-                    skip: skip + 1,
-                    first: false
-                })
-            } else {
-                alert('Resim yüklenirken hata oluştu')
-            }
-        }).catch((err) => {
-            alert("Resim yüklenirken hata oluştu");
-            console.log(err);
+        // axios.post("https://www.tesvik-sgk.com/signal/api/image/getImage", { skip }).then((res) => {
+        //     if (res?.data?.status === true) {
+        let path = `../images/${this.state.skip}.png`;
+        this.setState({
+            img: path,
+            skip: skip + 1,
+            first: false
         })
+        // } else {
+        //     alert('Resim yüklenirken hata oluştu')
+        // }
+        // }).catch((err) => {
+        //     alert("Resim yüklenirken hata oluştu");
+        //     console.log(err);
+        // })
     }
 
+    renderImg(img) {
+        // let data = `${img?.data}`.replace('"', '').replace('"', '');
+        let data = img;
+        return <img id='img' src={data} alt="image_480" class="i_v1"  ></img>
+    }
     componentWillUnmount() { clearInterval(this.interval) }
 
 
-    renderImg(img) {
-        let data = `${img?.data}`.replace('"', '').replace('"', '');
-        return <img src={data} alt="image_480" class="i_landscape_v2"></img>
-    }
+    // renderImg(img) {
+    //     let data = `${img?.data}`.replace('"', '').replace('"', '');
+    //     return <img src={data} alt="image_480" class="i_landscape_v2"></img>
+    // }
 
     render() {
         return (
