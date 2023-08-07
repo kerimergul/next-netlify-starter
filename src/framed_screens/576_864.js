@@ -8,8 +8,8 @@ class _576_864 extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            img: false,
-            skip: 0,
+            img: `../images/0-min.png`,
+            skip: Math.floor(Math.random() * 74),
             first: true,
         };
     }
@@ -20,28 +20,29 @@ class _576_864 extends Component {
         }
         this.interval = setInterval(async () => {
             this.getImg();
-        }, 12000)
+        }, 8000)
     }
 
     getImg() {
         let skip = this.state.skip;
-        if (skip > 10) {
+        if (skip > 74) {
             skip = 0;
         }
-        axios.post("https://www.tesvik-sgk.com/signal/api/image/getImage", { skip }).then((res) => {
-            if (res?.data?.status === true) {
-                this.setState({
-                    img: res.data.img,
-                    skip: skip + 1,
-                    first: false
-                })
-            } else {
-                alert('Resim yüklenirken hata oluştu')
-            }
-        }).catch((err) => {
-            alert("Resim yüklenirken hata oluştu");
-            console.log(err);
+        // axios.post("https://www.tesvik-sgk.com/signal/api/image/getImage", { skip }).then((res) => {
+        //     if (res?.data?.status === true) {
+        let path = `../images/${this.state.skip}.png`;
+        this.setState({
+            img: path,
+            skip: skip + 1,
+            first: false
         })
+        // } else {
+        //     alert('Resim yüklenirken hata oluştu')
+        // }
+        // }).catch((err) => {
+        //     alert("Resim yüklenirken hata oluştu");
+        //     console.log(err);
+        // })
     }
 
     componentWillUnmount() { clearInterval(this.interval) }
@@ -61,7 +62,8 @@ class _576_864 extends Component {
 
 
     renderImg(img) {
-        let data = `${img?.data}`.replace('"', '').replace('"', '');
+        // let data = `${img?.data}`.replace('"', '').replace('"', '');
+        let data = img;
         return <img id='img' src={data} alt="image_480" class="i_v1" onLoad={this.setImageWidth} ></img>
     }
 
