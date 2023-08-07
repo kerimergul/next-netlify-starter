@@ -1,14 +1,13 @@
 import React, { Component } from "react";
 import "./style.css";
 import axios from "axios";
-import placeHolder from "../../public/images/0.png";
 const style = { backgroundImage: 'url(/backgrounds/bg_1080_1920-min.jpg)' };
 
 class _1080_1920 extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            img: placeHolder,
+            img: `../images/0-min.png`,
             skip: Math.floor(Math.random() * 74),
             first: true,
         };
