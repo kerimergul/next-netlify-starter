@@ -15,9 +15,9 @@ class _648_384 extends Component {
     }
 
     componentDidMount() {
-        if (this.state.first === true) {
-            this.getImg();
-        }
+         // if (this.state.first === true) {
+        //     this.getImg();
+        // }
         this.interval = setInterval(async () => {
             this.getImg();
         }, 8000)

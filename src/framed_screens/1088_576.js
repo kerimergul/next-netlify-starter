@@ -15,9 +15,9 @@ class _1088_576 extends Component {
     }
 
     componentDidMount() {
-        if (this.state.first === true) {
-            this.getImg();
-        }
+        // if (this.state.first === true) {
+        //     this.getImg();
+        // }
         this.interval = setInterval(async () => {
             this.getImg();
         }, 8000)
@@ -54,7 +54,7 @@ class _1088_576 extends Component {
 
         if (resimYukseklik < sayfaYukseklik * 0.85) {
             resim.style.left = '-5%';
-            resim.style.width = '55%';           
+            resim.style.width = '55%';
         }
     }
 
