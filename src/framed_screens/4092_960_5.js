@@ -15,7 +15,7 @@ class _4092_960_v5 extends Component {
     }
 
     componentDidMount() {
-         // if (this.state.first === true) {
+        // if (this.state.first === true) {
         //     this.getImg();
         // }
         this.interval = setInterval(async () => {
@@ -24,16 +24,17 @@ class _4092_960_v5 extends Component {
     }
 
     getImg() {
-        let skip = this.state.skip;
-        if (skip > 74) {
-            skip = 0;
-        }
+        // let skip = this.state.skip;
+        // if (skip > 74) {
+        //     skip = 0;
+        // }
         // axios.post("https://www.tesvik-sgk.com/signal/api/image/getImage", { skip }).then((res) => {
         //     if (res?.data?.status === true) {
-            let path = `../images/${skip}.png`;
-            this.setState({
+        let path = `../images/${skip}.png`;
+        let skip = Math.floor(Math.random() * 74);
+        this.setState({
             img: path,
-            skip: skip + 1,
+            skip: skip,
             first: false
         })
         // } else {
