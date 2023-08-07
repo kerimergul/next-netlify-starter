@@ -24,14 +24,14 @@ class _4092_960 extends Component {
     }
 
     getImg() {
-        // let skip = this.state.skip;
+        let skip = this.state.skip;
         // if (skip > 74) {
         //     skip = 0;
         // }
         // axios.post("https://www.tesvik-sgk.com/signal/api/image/getImage", { skip }).then((res) => {
         //     if (res?.data?.status === true) {
         let path = `../images/${skip}.png`;
-        let skip = Math.floor(Math.random() * 74);
+        skip = Math.floor(Math.random() * 74);
         this.setState({
             img: path,
             skip: skip,
