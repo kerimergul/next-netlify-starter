@@ -15,7 +15,7 @@ class _icon_led extends Component {
     }
 
     componentDidMount() {
-         // if (this.state.first === true) {
+        // if (this.state.first === true) {
         //     this.getImg();
         // }
         this.interval = setInterval(async () => {
@@ -30,7 +30,7 @@ class _icon_led extends Component {
         }
         // axios.post("https://www.tesvik-sgk.com/signal/api/image/getImage", { skip }).then((res) => {
         //     if (res?.data?.status === true) {
-        let path = `../images/${this.state.skip}.png`;
+        let path = `../images/${skip}.png`;
         this.setState({
             img: path,
             skip: skip + 1,

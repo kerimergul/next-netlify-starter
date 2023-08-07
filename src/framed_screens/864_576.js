@@ -15,9 +15,9 @@ class _864_576 extends Component {
     }
 
     componentDidMount() {
-        if (this.state.first === true) {
-            this.getImg();
-        }
+          // if (this.state.first === true) {
+        //     this.getImg();
+        // }
         this.interval = setInterval(async () => {
             this.getImg();
         }, 8000)
@@ -30,8 +30,8 @@ class _864_576 extends Component {
         }
         // axios.post("https://www.tesvik-sgk.com/signal/api/image/getImage", { skip }).then((res) => {
         //     if (res?.data?.status === true) {
-        let path = `../images/${this.state.skip}.png`;
-        this.setState({
+            let path = `../images/${skip}.png`;
+            this.setState({
             img: path,
             skip: skip + 1,
             first: false
