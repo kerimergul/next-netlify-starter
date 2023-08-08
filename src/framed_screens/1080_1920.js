@@ -8,7 +8,7 @@ class _1080_1920 extends Component {
         super(props);
         this.state = {
             img: `../images/0-min.png`,
-            skip: Math.floor(Math.random() * 74),
+            skip: Math.floor(Math.random() * 79),
             first: true,
         };
     }
@@ -30,7 +30,7 @@ class _1080_1920 extends Component {
         // axios.post("https://www.tesvik-sgk.com/signal/api/image/getImage", { skip }).then((res) => {
         //     if (res?.data?.status === true) {
         let path = `../images/${skip}.png`;
-        skip = Math.floor(Math.random() * 74);
+        skip = Math.floor(Math.random() * 79);
         this.setState({
             img: path,
             skip: skip,
