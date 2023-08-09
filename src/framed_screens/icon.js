@@ -9,8 +9,8 @@ class _icon_led extends Component {
         super(props);
         let skip = Math.floor(Math.random() * (79 - 31 + 1) + 31)
         this.state = {
-            img: `../images/${skip}-min.png`,
-            skip: skip,
+            img: `../images/0-min.png`,
+            skip: Math.floor(Math.random() * 79),
             first: true,
         };
     }
@@ -31,8 +31,8 @@ class _icon_led extends Component {
         // }
         // axios.post("https://www.tesvik-sgk.com/signal/api/image/getImage", { skip }).then((res) => {
         //     if (res?.data?.status === true) {
-        let path = `../images/${skip}-min.png`;
-        skip = Math.floor(Math.random() * (79 - 31 + 1) + 31)
+        let path = `../images/${skip}.png`;
+        skip = Math.floor(Math.random() * 79);
         this.setState({
             img: path,
             skip: skip,
