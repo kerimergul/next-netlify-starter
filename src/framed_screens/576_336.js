@@ -32,12 +32,12 @@ class _576_336 extends Component {
         // axios.post("https://www.tesvik-sgk.com/signal/api/image/getImage", { skip }).then((res) => {
         //     if (res?.data?.status === true) {
         let path = `../images/${skip}-min.webp`;
-        skip = Math.floor(Math.random() * 6),
-            this.setState({
-                img: path,
-                skip: skip,
-                first: false
-            })
+        skip = Math.floor(Math.random() * 6);
+        this.setState({
+            img: path,
+            skip: skip,
+            first: false
+        })
         // } else {
         //     alert('Resim yüklenirken hata oluştu')
         // }
