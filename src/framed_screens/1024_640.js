@@ -7,9 +7,10 @@ const style = { backgroundImage: 'url(/backgrounds/bg_1024_640-min.jpg)' };
 class _1024_640 extends Component {
     constructor(props) {
         super(props);
+        let skip = Math.floor(Math.random() * 6)
         this.state = {
-            img: `../images/0-min.png`,
-            skip: Math.floor(Math.random() * 85),
+            img: `../images/${skip}-min.webp`,
+            skip: Math.floor(Math.random() * 6),
             first: true,
         };
     }
@@ -20,7 +21,7 @@ class _1024_640 extends Component {
         // }
         this.interval = setInterval(async () => {
             this.getImg();
-        }, 8000)
+        }, 6000)
     }
 
     getImg() {
@@ -30,8 +31,8 @@ class _1024_640 extends Component {
         // }
         // axios.post("https://www.tesvik-sgk.com/signal/api/image/getImage", { skip }).then((res) => {
         //     if (res?.data?.status === true) {
-        let path = `../images/${skip}.png`;
-        skip = Math.floor(Math.random() * 85);
+        let path = `../images/${skip}-min.webp`;
+        skip = Math.floor(Math.random() * 6)
         this.setState({
             img: path,
             skip: skip,
@@ -54,7 +55,7 @@ class _1024_640 extends Component {
 
         if (resimYukseklik < sayfaYukseklik * 0.85) {
             resim.style.left = '-5%';
-            resim.style.width = '55%';           
+            resim.style.width = '55%';
         }
     }
 

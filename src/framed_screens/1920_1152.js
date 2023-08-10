@@ -7,20 +7,21 @@ const style = { backgroundImage: 'url(/backgrounds/bg_1920_1152-min.jpg)' };
 class _1920_1152 extends Component {
     constructor(props) {
         super(props);
+        let skip = Math.floor(Math.random() * 6)
         this.state = {
-            img: `../images/0-min.png`,
-            skip: Math.floor(Math.random() * 85),
+            img: `../images/${skip}-min.webp`,
+            skip: Math.floor(Math.random() * 6),
             first: true,
         };
     }
 
     componentDidMount() {
-         // if (this.state.first === true) {
+        // if (this.state.first === true) {
         //     this.getImg();
         // }
         this.interval = setInterval(async () => {
             this.getImg();
-        }, 8000)
+        }, 6000)
     }
 
     getImg() {
@@ -30,8 +31,8 @@ class _1920_1152 extends Component {
         // }
         // axios.post("https://www.tesvik-sgk.com/signal/api/image/getImage", { skip }).then((res) => {
         //     if (res?.data?.status === true) {
-        let path = `../images/${skip}.png`;
-        skip = Math.floor(Math.random() * 85);
+        let path = `../images/${skip}-min.webp`;
+        skip = Math.floor(Math.random() * 6)
         this.setState({
             img: path,
             skip: skip,
@@ -47,7 +48,7 @@ class _1920_1152 extends Component {
     }
 
     componentWillUnmount() { clearInterval(this.interval) }
-    
+
     setImgHeigth() {
         const resim = document.getElementById('img');
         const sayfaYukseklik = window.innerHeight;
@@ -55,7 +56,7 @@ class _1920_1152 extends Component {
 
         if (resimYukseklik < sayfaYukseklik * 0.85) {
             resim.style.left = '-5%';
-            resim.style.width = '55%';           
+            resim.style.width = '55%';
         }
     }
 

@@ -7,9 +7,10 @@ const style = { backgroundImage: 'url(/backgrounds/bg_2160_3840-min.jpg)' };
 class _2160_3840 extends Component {
     constructor(props) {
         super(props);
+        let skip = Math.floor(Math.random() * 6)
         this.state = {
-            img: `../images/0-min.png`,
-            skip: Math.floor(Math.random() * 85),
+            img: `../images/${skip}-min.webp`,
+            skip: Math.floor(Math.random() * 6),
             first: true,
         };
     }
@@ -20,7 +21,7 @@ class _2160_3840 extends Component {
         // }
         this.interval = setInterval(async () => {
             this.getImg();
-        }, 8000)
+        }, 6000)
     }
 
     getImg() {
@@ -30,8 +31,8 @@ class _2160_3840 extends Component {
         // }
         // axios.post("https://www.tesvik-sgk.com/signal/api/image/getImage", { skip }).then((res) => {
         //     if (res?.data?.status === true) {
-        let path = `../images/${skip}.png`;
-        skip = Math.floor(Math.random() * 85);
+            let path = `../images/${skip}-min.webp`;
+        skip = Math.floor(Math.random() * 6)
         this.setState({
             img: path,
             skip: skip,
