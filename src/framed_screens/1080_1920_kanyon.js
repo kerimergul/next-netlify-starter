@@ -31,6 +31,7 @@ class _1080_1920_Kanyon extends Component {
         // }
         axios.post("https://www.tesvik-sgk.com/signal/api/image/getImage", { skip }).then((res) => {
             if (res?.data?.status === true) {
+                console.log(res?.data);
                 // let path = `../images/${skip}-min.webp`;
                 skip = skip + 1;
                 this.setState({
