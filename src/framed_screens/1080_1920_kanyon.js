@@ -35,7 +35,7 @@ class _1080_1920_Kanyon extends Component {
                 // let path = `../images/${skip}-min.webp`;
                 skip = skip + 1;
                 this.setState({
-                    img: res?.data?.img,
+                    img: res?.data?.img?.data,
                     skip: skip,
                     first: false
                 })
