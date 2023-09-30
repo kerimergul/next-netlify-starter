@@ -9,7 +9,7 @@ class _1080_1920_Kanyon extends Component {
         super(props);
         let skip = 0;
         this.state = {
-            img: `../images/${skip}-min.webp`,
+            img: false,
             skip: 0,
             first: true,
         };
