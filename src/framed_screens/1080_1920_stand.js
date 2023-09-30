@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./stand.css";
-import header from '../images/gulus.png';
-import flash from '../images/flash5.png';
+// import header from '../images/gulus.png';
+// import flash from '../images/flash5.png';
 const style = { backgroundImage: 'url(/backgrounds/bg_1080_1920_stand-2-min.png)' };
 const style_img = {
     width: '100%',
@@ -22,7 +22,7 @@ class _1080_1920_Stand extends Component {
         return (
             <div class="bg_vertical"
                 style={style}>
-                <div id="container">
+                {/* <div id="container">
                     <img
                         class='pulsate-fwd'
                         src={header}
@@ -39,7 +39,7 @@ class _1080_1920_Stand extends Component {
                         }
                         id="img2"
                     ></img>
-                </div>
+                </div> */}
             </div>
         );
 
