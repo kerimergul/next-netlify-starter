@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import "./stand.css";
 import header from '../images/gulus.png';
 import flash from '../images/flash5.png';
-const style = { backgroundImage: 'url(/backgrounds/bg_1080_1920_stand-min.jpg)' };
+const style = { backgroundImage: 'url(/backgrounds/bg_1080_1920_stand-2-min.png)' };
 const style_img = {
     width: '100%',
     height: '100%',
