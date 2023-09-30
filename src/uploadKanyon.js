@@ -30,7 +30,7 @@ class UploadKanyonScreen extends Component {
                     throw error;
                 }
 
-                axios.post("https://www.tesvik-sgk.com/signal/api/image/uploadKanyon", { img }).then((res) => {
+                axios.post("https://www.tesvik-sgk.com/signal/api/image/upload", { img }).then((res) => {
                     console.log(res);
                     if (res?.data?.status === true) {
                         alert("Resim başarıyla yüklendi");
