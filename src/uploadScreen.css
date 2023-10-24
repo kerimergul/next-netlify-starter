@@ -14,13 +14,13 @@
 }
 
 .container {
-    height: 100vh;
+    height: 100%;
     width: 100%;
     align-items: center;
     display: flex;
     justify-content: center;
     background-color: #fcfcfc;
-    overflow-y: scroll;
+    margin-top: 50px;
 }
 
 .image-card {
