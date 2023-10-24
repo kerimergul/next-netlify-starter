@@ -9,7 +9,7 @@
   status = 200
 
 [[redirects]]
-  from = "/1344_416_Akbank"
+  from = "/_1344_416_Akbank"
   to = "/"
   status = 200
 
