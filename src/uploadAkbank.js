@@ -23,7 +23,7 @@ class UploadAkbankScreen extends Component {
     }
 
     async uploadToServer(data, type) {
-        alert(type + 'Ölçülü resim için yükleme işlemi başladı.')
+        alert(type + ' Ölçülü resim için yükleme işlemi başladı.')
         try {
             blobcnv(data, function (error, img) {
                 if (error) {
@@ -32,12 +32,12 @@ class UploadAkbankScreen extends Component {
                 axios.post("https://signal-server.onrender.com/api/image/upload", { img, type }).then((res) => {
                     console.log(res);
                     if (res?.data?.status === true) {
-                        alert(type + "Ölçülü resim başarıyla yüklendi");
+                        alert(type + " Ölçülü resim başarıyla yüklendi");
                     } else {
-                        alert(type + 'Ölçülü resim yüklenirken hata oluştu')
+                        alert(type + ' Ölçülü resim yüklenirken hata oluştu')
                     }
                 }).catch((err) => {
-                    alert(type + "Ölçülü resim  yüklenirken hata oluştu");
+                    alert(type + " Ölçülü resim  yüklenirken hata oluştu");
                     console.log(err);
                 })
             })
