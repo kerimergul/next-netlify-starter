@@ -106,7 +106,7 @@ class App extends Component {
     }
     else if (window.location.href.includes("/_384_960_Akbank")) {
       return <_384_960></_384_960>
-    } else if (window.location.href.includes("/1344_416_Akbank")) {
+    } else if (window.location.href.includes("/_1344_416_Akbank")) {
       return <_1344_416></_1344_416>
     } else if (window.location.href.includes("/_2160_3840_Akbank")) {
       return <_2160_3840></_2160_3840>
