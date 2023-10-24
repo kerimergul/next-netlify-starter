@@ -105,47 +105,71 @@ class UploadAkbankScreen extends Component {
         return (
             <div class="col">
                 <div class="container">
-                    <div class="card">
-                        <h3>Akbank için Resim Yükle</h3>
-                        <div class="drop_box">
-                            <header>
-                                <h4>384x960 için dosyayı seçiniz</h4>
-                            </header>
-                            <p>Desteklenen dosya tipleri: JPEG, JPG, PNG</p>
-                            <input type="file" accept="image/*" id="fileID" class="input-image" onChange={(e) => this.handleImageUpload(e, '384x960')} />
-                            {/* <button class="btn" onChange={this.handleImageUpload}>Gözat</button> */}
+                    <div class="row">
+                        <div class="col">
+                            <div class="card">
+                                <h3>Akbank için Resim Yükle</h3>
+                                <div class="drop_box">
+                                    <header>
+                                        <h4>384x960 için dosyayı seçiniz</h4>
+                                    </header>
+                                    <p>Desteklenen dosya tipleri: JPEG, JPG, PNG</p>
+                                    <input type="file" accept="image/*" id="fileID" class="input-image" onChange={(e) => this.handleImageUpload(e, '384x960')} />
+                                    {/* <button class="btn" onChange={this.handleImageUpload}>Gözat</button> */}
+                                </div>
+                                <div class="card">
+                                    <h3>Akbank için Resim Yükle</h3>
+                                    <div class="drop_box">
+                                        <header>
+                                            <h4>960x2016 için dosyayı seçiniz</h4>
+                                        </header>
+                                        <p>Desteklenen dosya tipleri: JPEG, JPG, PNG</p>
+                                        <input type="file" accept="image/*" id="fileID" class="input-image" onChange={(e) => this.handleImageUpload(e, '960x2016')} />
+                                        {/* <button class="btn" onChange={this.handleImageUpload}>Gözat</button> */}
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="drop_box">
-                            <header>
-                                <h4>960x2016 için dosyayı seçiniz</h4>
-                            </header>
-                            <p>Desteklenen dosya tipleri: JPEG, JPG, PNG</p>
-                            <input type="file" accept="image/*" id="fileID" class="input-image" onChange={(e) => this.handleImageUpload(e, '960x2016')} />
-                            {/* <button class="btn" onChange={this.handleImageUpload}>Gözat</button> */}
+                        <div class="row">
+                            <div class="col">
+                                <div class="card">
+                                    <h3>Akbank için Resim Yükle</h3>
+                                    <div class="drop_box">
+                                        <header>
+                                            <h4>1080x1920 için dosyayı seçiniz</h4>
+                                        </header>
+                                        <p>Desteklenen dosya tipleri: JPEG, JPG, PNG</p>
+                                        <input type="file" accept="image/*" id="fileID" class="input-image" onChange={(e) => this.handleImageUpload(e, '1080x1920')} />
+                                        {/* <button class="btn" onChange={this.handleImageUpload}>Gözat</button> */}
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <h3>Akbank için Resim Yükle</h3>
+                                    <div class="drop_box">
+                                        <header>
+                                            <h4>1344x416 için dosyayı seçiniz</h4>
+                                        </header>
+                                        <p>Desteklenen dosya tipleri: JPEG, JPG, PNG</p>
+                                        <input type="file" accept="image/*" id="fileID" class="input-image" onChange={(e) => this.handleImageUpload(e, '1344x416')} />
+                                        {/* <button class="btn" onChange={this.handleImageUpload}>Gözat</button> */}
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="drop_box">
-                            <header>
-                                <h4>1080x1920 için dosyayı seçiniz</h4>
-                            </header>
-                            <p>Desteklenen dosya tipleri: JPEG, JPG, PNG</p>
-                            <input type="file" accept="image/*" id="fileID" class="input-image" onChange={(e) => this.handleImageUpload(e, '1080x1920')} />
-                            {/* <button class="btn" onChange={this.handleImageUpload}>Gözat</button> */}
-                        </div>
-                        <div class="drop_box">
-                            <header>
-                                <h4>1344x416 için dosyayı seçiniz</h4>
-                            </header>
-                            <p>Desteklenen dosya tipleri: JPEG, JPG, PNG</p>
-                            <input type="file" accept="image/*" id="fileID" class="input-image" onChange={(e) => this.handleImageUpload(e, '1344x416')} />
-                            {/* <button class="btn" onChange={this.handleImageUpload}>Gözat</button> */}
-                        </div>
-                        <div class="drop_box">
-                            <header>
-                                <h4>2160x3840 için dosyayı seçiniz</h4>
-                            </header>
-                            <p>Desteklenen dosya tipleri: JPEG, JPG, PNG</p>
-                            <input type="file" accept="image/*" id="fileID" class="input-image" onChange={(e) => this.handleImageUpload(e, '2160x3840')} />
-                            {/* <button class="btn" onChange={this.handleImageUpload}>Gözat</button> */}
+                        <div class="row">
+                            <div class="col">
+                                <div class="card">
+                                    <h3>Akbank için Resim Yükle</h3>
+                                    <div class="drop_box">
+                                        <header>
+                                            <h4>2160x3840 için dosyayı seçiniz</h4>
+                                        </header>
+                                        <p>Desteklenen dosya tipleri: JPEG, JPG, PNG</p>
+                                        <input type="file" accept="image/*" id="fileID" class="input-image" onChange={(e) => this.handleImageUpload(e, '2160x3840')} />
+                                        {/* <button class="btn" onChange={this.handleImageUpload}>Gözat</button> */}
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
