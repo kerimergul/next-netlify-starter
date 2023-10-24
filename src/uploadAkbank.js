@@ -178,14 +178,7 @@ class UploadAkbankScreen extends Component {
                             </div>
                         </div>
                     </div>
-                </div>
-                {
-                    this.state.data == false ? <div></div> :
-                        <div>
-                            <h3 class="image-card">Yüklenmiş Resimler</h3>
-                            {this.renderDifferentSizeImg()}
-                        </div>
-                }
+                </div>               
             </div >
         );
     }
