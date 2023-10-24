@@ -80,6 +80,7 @@ import _1344_416 from "./framed_screens/1344_416.akbank.js";
 import _2160_3840 from "./framed_screens/2160_3840.akbank.js";
 import _1080_1920 from "./framed_screens/1080_1920.akbank.js";
 import _960_2016 from "./framed_screens/960_2016.akbank.js";
+import _2160_3840_Switch from "./framed_screens/2160_3840_switch.akbank.js";
 
 
 
@@ -103,6 +104,9 @@ class App extends Component {
     // AKBANK
     if (window.location.href.includes("/uploadAkbank")) {
       return <UploadAkbankScreen></UploadAkbankScreen>
+    }
+    else if (window.location.href.includes("/_2160_3840_Switch_Akbank")) {
+      return <_2160_3840_Switch></_2160_3840_Switch>
     }
     else if (window.location.href.includes("/_384_960_Akbank")) {
       return <_384_960></_384_960>

@@ -29,6 +29,11 @@
   status = 200
 
 [[redirects]]
+  from = "/_2160_3840_Switch_Akbank"
+  to = "/"
+  status = 200
+
+[[redirects]]
   from = "/1080p"
   to = "/"
   status = 200
