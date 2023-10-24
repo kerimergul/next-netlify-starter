@@ -22,23 +22,22 @@ class UploadAkbankScreen extends Component {
         })
     }
 
-    async uploadToServer(data) {
-        alert('Yükleme işlemi başladı.')
+    async uploadToServer(data, type) {
+        alert(type + 'Ölçülü resim için yükleme işlemi başladı.')
         try {
             blobcnv(data, function (error, img) {
                 if (error) {
                     throw error;
                 }
-
-                axios.post("https://www.tesvik-sgk.com/signal/api/image/upload", { img }).then((res) => {
+                axios.post("https://signal-server.onrender.com/api/image/upload", { img, type }).then((res) => {
                     console.log(res);
                     if (res?.data?.status === true) {
-                        alert("Resim başarıyla yüklendi");
+                        alert(type + "Ölçülü resim başarıyla yüklendi");
                     } else {
-                        alert('Resim yüklenirken hata oluştu')
+                        alert(type + 'Ölçülü resim yüklenirken hata oluştu')
                     }
                 }).catch((err) => {
-                    alert("Resim yüklenirken hata oluştu");
+                    alert(type + "Ölçülü resim  yüklenirken hata oluştu");
                     console.log(err);
                 })
             })
@@ -53,7 +52,7 @@ class UploadAkbankScreen extends Component {
         return;
     }
 
-    async handleImageUpload(event) {
+    async handleImageUpload(event, type) {
         console.log('trigger handle image upload');
         const imageFile = event.target.files[0];
         console.log('originalFile instanceof Blob', imageFile instanceof Blob); // true
@@ -70,7 +69,7 @@ class UploadAkbankScreen extends Component {
             console.log(`compressedFile size ${compressedFile.size / 1024 / 1024} MB`); // smaller than maxSizeMB
             console.log(compressedFile)
 
-            this.uploadToServer(compressedFile);
+            this.uploadToServer(compressedFile, type);
 
             this.setState({
                 data: compressedFile
@@ -110,10 +109,42 @@ class UploadAkbankScreen extends Component {
                         <h3>Akbank için Resim Yükle</h3>
                         <div class="drop_box">
                             <header>
-                                <h4>Dosyayı seçiniz</h4>
+                                <h4>384x960 için dosyayı seçiniz</h4>
                             </header>
                             <p>Desteklenen dosya tipleri: JPEG, JPG, PNG</p>
-                            <input type="file" accept="image/*" id="fileID" class="input-image" onChange={(e) => this.handleImageUpload(e)} />
+                            <input type="file" accept="image/*" id="fileID" class="input-image" onChange={(e) => this.handleImageUpload(e, '384x960')} />
+                            {/* <button class="btn" onChange={this.handleImageUpload}>Gözat</button> */}
+                        </div>
+                        <div class="drop_box">
+                            <header>
+                                <h4>960x2016 için dosyayı seçiniz</h4>
+                            </header>
+                            <p>Desteklenen dosya tipleri: JPEG, JPG, PNG</p>
+                            <input type="file" accept="image/*" id="fileID" class="input-image" onChange={(e) => this.handleImageUpload(e, '960x2016')} />
+                            {/* <button class="btn" onChange={this.handleImageUpload}>Gözat</button> */}
+                        </div>
+                        <div class="drop_box">
+                            <header>
+                                <h4>1080x1920 için dosyayı seçiniz</h4>
+                            </header>
+                            <p>Desteklenen dosya tipleri: JPEG, JPG, PNG</p>
+                            <input type="file" accept="image/*" id="fileID" class="input-image" onChange={(e) => this.handleImageUpload(e, '1080x1920')} />
+                            {/* <button class="btn" onChange={this.handleImageUpload}>Gözat</button> */}
+                        </div>
+                        <div class="drop_box">
+                            <header>
+                                <h4>1344x416 için dosyayı seçiniz</h4>
+                            </header>
+                            <p>Desteklenen dosya tipleri: JPEG, JPG, PNG</p>
+                            <input type="file" accept="image/*" id="fileID" class="input-image" onChange={(e) => this.handleImageUpload(e, '1344x416')} />
+                            {/* <button class="btn" onChange={this.handleImageUpload}>Gözat</button> */}
+                        </div>
+                        <div class="drop_box">
+                            <header>
+                                <h4>2160x3840 için dosyayı seçiniz</h4>
+                            </header>
+                            <p>Desteklenen dosya tipleri: JPEG, JPG, PNG</p>
+                            <input type="file" accept="image/*" id="fileID" class="input-image" onChange={(e) => this.handleImageUpload(e, '2160x3840')} />
                             {/* <button class="btn" onChange={this.handleImageUpload}>Gözat</button> */}
                         </div>
                     </div>

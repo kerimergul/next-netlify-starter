@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./style.css";
 import axios from "axios";
-
+const type = '1080x1920';
 class _1080_1920 extends Component {
     constructor(props) {
         super(props);
@@ -13,9 +13,9 @@ class _1080_1920 extends Component {
         };
     }
     componentDidMount() {
-        // if (this.state.first === true) {
-        //     this.getImg();
-        // }
+        if (this.state.first === true) {
+            this.getImg();
+        }
         this.interval = setInterval(async () => {
             this.getImg();
         }, 6000)
@@ -26,22 +26,22 @@ class _1080_1920 extends Component {
         // if (skip > 74) {
         //     skip = 0;
         // }
-        // axios.post("https://www.tesvik-sgk.com/signal/api/image/getImage", { skip }).then((res) => {
-        //     if (res?.data?.status === true) {
-        let path = `../images/${skip}-min.webp`;
-        skip = Math.floor(Math.random() * 6)
-        this.setState({
-            img: path,
-            skip: skip,
-            first: false
+        axios.post("https://signal-server.onrender.com/api/image/getImage", { skip, type }).then((res) => {
+            if (res?.data?.status === true) {
+                let path = `../images/${skip}-min.webp`;
+                skip = Math.floor(Math.random() * 6)
+                this.setState({
+                    img: path,
+                    skip: skip,
+                    first: false
+                })
+            } else {
+                alert('Resim yüklenirken hata oluştu')
+            }
+        }).catch((err) => {
+            alert("Resim yüklenirken hata oluştu");
+            console.log(err);
         })
-        // } else {
-        //     alert('Resim yüklenirken hata oluştu')
-        // }
-        // }).catch((err) => {
-        //     alert("Resim yüklenirken hata oluştu");
-        //     console.log(err);
-        // })
     }
 
     componentWillUnmount() { clearInterval(this.interval) }
