@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import "./style.css";
 import axios from "axios";
 
-const style = { backgroundImage: 'url(/backgrounds/bg_384_960-min.jpg)' };
 
 class _384_960 extends Component {
     constructor(props) {
@@ -29,22 +28,22 @@ class _384_960 extends Component {
         // if (skip > 74) {
         //     skip = 0;
         // }
-        // axios.post("https://www.tesvik-sgk.com/signal/api/image/getImage", { skip }).then((res) => {
-        //     if (res?.data?.status === true) {
-        let path = `../images/${skip}-min.webp`;
-        skip = Math.floor(Math.random() * 6);
-        this.setState({
-            img: path,
-            skip: skip,
-            first: false
+        axios.post("https://www.tesvik-sgk.com/signal/api/image/getImage", { skip }).then((res) => {
+            if (res?.data?.status === true) {
+                let path = `../images/${skip}-min.webp`;
+                skip = Math.floor(Math.random() * 6);
+                this.setState({
+                    img: path,
+                    skip: skip,
+                    first: false
+                })
+            } else {
+                alert('Resim yüklenirken hata oluştu')
+            }
+        }).catch((err) => {
+            alert("Resim yüklenirken hata oluştu");
+            console.log(err);
         })
-        // } else {
-        //     alert('Resim yüklenirken hata oluştu')
-        // }
-        // }).catch((err) => {
-        //     alert("Resim yüklenirken hata oluştu");
-        //     console.log(err);
-        // })
     }
     componentWillUnmount() { clearInterval(this.interval) }
 
@@ -63,13 +62,12 @@ class _384_960 extends Component {
     renderImg(img) {
         // let data = `${img?.data}`.replace('"', '').replace('"', '');
         let data = img;
-        return <img id='img' src={data} alt="image_480" class="i_v1"  ></img>
+        return <img id='img' src={data} alt="image_384" class="bg_vertical"  ></img>
     }
 
     render() {
         return (
-            <div class="bg_vertical"
-                style={style}>
+            <div class="bg_vertical">
                 {this.state.img !== false ? this.renderImg(this.state.img) : <div></div>}
             </div>
         );

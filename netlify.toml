@@ -1,4 +1,34 @@
 [[redirects]]
+  from = "/uploadAkbank"
+  to = "/"
+  status = 200
+
+[[redirects]]
+  from = "/_384_960_Akbank"
+  to = "/"
+  status = 200
+
+[[redirects]]
+  from = "/1344_416_Akbank"
+  to = "/"
+  status = 200
+
+[[redirects]]
+  from = "/_2160_3840_Akbank"
+  to = "/"
+  status = 200
+
+[[redirects]]
+  from = "/_1080_1920_Akbank"
+  to = "/"
+  status = 200
+
+[[redirects]]
+  from = "/_960_2016_Akbank"
+  to = "/"
+  status = 200
+
+[[redirects]]
   from = "/1080p"
   to = "/"
   status = 200

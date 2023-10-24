@@ -31,7 +31,7 @@ class _2160_3840 extends Component {
         // }
         // axios.post("https://www.tesvik-sgk.com/signal/api/image/getImage", { skip }).then((res) => {
         //     if (res?.data?.status === true) {
-            let path = `../images/${skip}-min.webp`;
+        let path = `../images/${skip}-min.webp`;
         skip = Math.floor(Math.random() * 6)
         this.setState({
             img: path,
@@ -64,13 +64,12 @@ class _2160_3840 extends Component {
     renderImg(img) {
         // let data = `${img?.data}`.replace('"', '').replace('"', '');
         let data = img;
-        return <img id='img' src={data} alt="image_480" class="i_v1" onLoad={this.setImageWidth}  ></img>
+        return <img id='img' src={data} alt="image_480" class="bg_vertical"></img>
     }
 
     render() {
         return (
-            <div class="bg_vertical"
-                style={style}>
+            <div class="bg_vertical">
                 {this.state.img !== false ? this.renderImg(this.state.img) : <div></div>}
             </div>
         );

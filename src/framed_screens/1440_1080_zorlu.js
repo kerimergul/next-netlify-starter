@@ -4,7 +4,7 @@ import axios from "axios";
 
 const style = { backgroundImage: 'url(/backgrounds/bg_1440_1080-min.jpg)' };
 
-class _1440_1080_Zorlu extends Component {
+class _1440_1080 extends Component {
     constructor(props) {
         super(props);
         let skip = Math.floor(Math.random() * 6)
@@ -14,6 +14,7 @@ class _1440_1080_Zorlu extends Component {
             first: true,
         };
     }
+
     componentDidMount() {
         // if (this.state.first === true) {
         //     this.getImg();
@@ -83,4 +84,4 @@ class _1440_1080_Zorlu extends Component {
 
     }
 }
-export default _1440_1080_Zorlu;
+export default _1440_1080;
