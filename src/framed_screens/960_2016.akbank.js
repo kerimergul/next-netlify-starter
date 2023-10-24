@@ -30,10 +30,10 @@ class _960_2016 extends Component {
         // }
         axios.post("https://signal-server.onrender.com/api/image/getImage", { skip, type }).then((res) => {
             if (res?.data?.status === true) {
-                let path = `../images/${skip}-min.webp`;
+                // let path = `../images/${skip}-min.webp`;
                 skip = Math.floor(Math.random() * 6)
                 this.setState({
-                    img: path,
+                    img: res?.data?.img?.data,
                     skip: skip,
                     first: false
                 })
