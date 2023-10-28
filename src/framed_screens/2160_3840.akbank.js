@@ -10,7 +10,7 @@ class _2160_3840 extends Component {
         super(props);
         let skip = Math.floor(Math.random() * 6)
         this.state = {
-            img: `../images/${skip}-min.webp`,
+            img: `../images/2160x3840.webp`,
             skip: Math.floor(Math.random() * 6),
             first: true,
             id: window.localStorage.getItem('id')
