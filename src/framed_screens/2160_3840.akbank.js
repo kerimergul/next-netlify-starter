@@ -32,7 +32,7 @@ class _2160_3840 extends Component {
         //     skip = 0;
         // }
         let id = this.state.id;
-        axios.post("https://signal-server.onrender.com/api/image/getImage", { skip, type, id }).then((res) => {
+        axios.post("https://tesvik-sgk.com/signal/api/image/getImage", { skip, type, id }).then((res) => {
             if (res?.data?.status === true) {
                 // let path = `../images/${skip}-min.webp`;
                 skip = Math.floor(Math.random() * 6)
