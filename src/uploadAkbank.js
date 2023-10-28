@@ -29,7 +29,7 @@ class UploadAkbankScreen extends Component {
                 if (error) {
                     throw error;
                 }
-                axios.post("https://signal-server.onrender.com/api/image/upload", { img, type }).then((res) => {
+                axios.post("https://www.tesvik-sgk.com/signal/image/upload", { img, type }).then((res) => {
                     console.log(res);
                     if (res?.data?.status === true) {
                         alert(type + " Ölçülü resim başarıyla yüklendi");
