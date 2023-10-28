@@ -91,10 +91,9 @@ class App extends Component {
 
   render() {
     let prevId = window.localStorage.getItem('id');
-    console.log(localStorage);
     if (!prevId) {
       let id = `${Math.floor(Math.random() * 99999)}`;
-      window.localStorage.set('id', id);
+      window.localStorage.setItem('id', id);
     }
 
 
