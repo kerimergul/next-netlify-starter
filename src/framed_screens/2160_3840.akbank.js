@@ -13,7 +13,7 @@ class _2160_3840 extends Component {
             img: `../images/${skip}-min.webp`,
             skip: Math.floor(Math.random() * 6),
             first: true,
-            id: localStorage.getItem('id')
+            id: window.localStorage.getItem('id')
         };
     }
 

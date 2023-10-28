@@ -11,7 +11,7 @@ class _960_2016 extends Component {
             img: `../images/${skip}-min.webp`,
             skip: Math.floor(Math.random() * 6),
             first: true,
-            id: localStorage.getItem('id')
+            id: window.localStorage.getItem('id')
         };
     }
 
