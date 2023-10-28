@@ -90,6 +90,12 @@ class App extends Component {
   }
 
   render() {
+    let prevId = localStorage.getItem('id');
+    if (!prevId) {
+      let id = `${Math.floor(Math.random() * 99999)}`;
+      localStorage.set('id', id);
+    }
+
 
     //UPLOAD
 

@@ -10,6 +10,7 @@ class _1080_1920 extends Component {
             img: `../images/${skip}-min.webp`,
             skip: Math.floor(Math.random() * 6),
             first: true,
+            id: localStorage.getItem('id')
         };
     }
     componentDidMount() {
@@ -26,7 +27,8 @@ class _1080_1920 extends Component {
         // if (skip > 74) {
         //     skip = 0;
         // }
-        axios.post("https://signal-server.onrender.com/api/image/getImage", { skip, type }).then((res) => {
+        let id = this.state.id;
+        axios.post("https://signal-server.onrender.com/api/image/getImage", { skip, type, id }).then((res) => {
             if (res?.data?.status === true) {
                 // let path = `../images/${skip}-min.webp`;
                 skip = Math.floor(Math.random() * 6)
