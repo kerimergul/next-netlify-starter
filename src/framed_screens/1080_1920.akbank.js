@@ -19,7 +19,7 @@ class _1080_1920 extends Component {
         }
         this.interval = setInterval(async () => {
             this.getImg();
-        }, 6000)
+        }, 15000)
     }
 
     getImg() {

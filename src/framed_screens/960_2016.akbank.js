@@ -21,7 +21,7 @@ class _960_2016 extends Component {
         }
         this.interval = setInterval(async () => {
             this.getImg();
-        }, 6000)
+        }, 15000)
     }
 
     getImg() {

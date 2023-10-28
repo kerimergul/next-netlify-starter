@@ -23,7 +23,7 @@ class _1344_416 extends Component {
         }
         this.interval = setInterval(async () => {
             this.getImg();
-        }, 6000)
+        }, 15000)
     }
 
     getImg() {
