@@ -50,7 +50,7 @@ class _2160_3840 extends Component {
             alert("Resim yüklenirken hata oluştu");
             console.log(err);
             this.setState({
-                currentStyle: {}
+                currentStyle: style
             })
         })
     }
@@ -77,7 +77,7 @@ class _2160_3840 extends Component {
 
     render() {
         return (
-            <div class="bg_vertical" style={this.state.style}>
+            <div class="bg_vertical" style={this.state.currentStyle}>
                 {this.state.img !== false ? this.renderImg(this.state.img) : <div></div>}
             </div>
         );
