@@ -3,15 +3,18 @@ import "./style.css";
 import axios from "axios";
 
 const type = '960x2016';
+const style = { backgroundImage: 'url(/backgrounds/960x2016.webp)' };
+
 class _960_2016 extends Component {
     constructor(props) {
         super(props);
         let skip = Math.floor(Math.random() * 6)
         this.state = {
-            img: `../images/${skip}-min.webp`,
+            img: false,
             skip: Math.floor(Math.random() * 6),
             first: true,
-            id: window.localStorage.getItem('id')
+            id: window.localStorage.getItem('id'),
+            currentStyle: style
         };
     }
 
@@ -37,7 +40,8 @@ class _960_2016 extends Component {
                 this.setState({
                     img: res?.data?.img?.data,
                     skip: skip,
-                    first: false
+                    first: false,
+                    currentStyle: {}
                 })
             } else {
                 alert('Resim yüklenirken hata oluştu')
@@ -45,6 +49,9 @@ class _960_2016 extends Component {
         }).catch((err) => {
             alert("Resim yüklenirken hata oluştu");
             console.log(err);
+            this.setState({
+                currentStyle: {}
+            })
         })
     }
 
@@ -70,7 +77,7 @@ class _960_2016 extends Component {
 
     render() {
         return (
-            <div class="bg_vertical">
+            <div class="bg_vertical" style={this.state.style}>
                 {this.state.img !== false ? this.renderImg(this.state.img) : <div></div>}
             </div>
         );

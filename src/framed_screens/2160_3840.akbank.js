@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import "./style.css";
 import axios from "axios";
 
-const style = { backgroundImage: 'url(/backgrounds/bg_2160_3840-min.jpg)' };
+const style = { backgroundImage: 'url(/backgrounds/2160x3840.webp)' };
 const type = '2160x3840';
 
 class _2160_3840 extends Component {
@@ -10,10 +10,11 @@ class _2160_3840 extends Component {
         super(props);
         let skip = Math.floor(Math.random() * 6)
         this.state = {
-            img: `../images/2160x3840.webp`,
+            img: false,
             skip: Math.floor(Math.random() * 6),
             first: true,
-            id: window.localStorage.getItem('id')
+            id: window.localStorage.getItem('id'),
+            currentStyle: style
         };
     }
 
@@ -39,7 +40,8 @@ class _2160_3840 extends Component {
                 this.setState({
                     img: res?.data?.img?.data,
                     skip: skip,
-                    first: false
+                    first: false,
+                    currentStyle: {}
                 })
             } else {
                 alert('Resim yüklenirken hata oluştu')
@@ -47,6 +49,9 @@ class _2160_3840 extends Component {
         }).catch((err) => {
             alert("Resim yüklenirken hata oluştu");
             console.log(err);
+            this.setState({
+                currentStyle: {}
+            })
         })
     }
 
@@ -72,7 +77,7 @@ class _2160_3840 extends Component {
 
     render() {
         return (
-            <div class="bg_vertical">
+            <div class="bg_vertical" style={this.state.style}>
                 {this.state.img !== false ? this.renderImg(this.state.img) : <div></div>}
             </div>
         );

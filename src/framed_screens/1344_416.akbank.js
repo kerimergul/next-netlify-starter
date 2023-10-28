@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import "./style.css";
 import axios from "axios";
 
-// const style = { backgroundImage: 'url(/backgrounds/bg_1088_576-min.jpg)' };
+const style = { backgroundImage: 'url(/backgrounds/1344x416.webp)' };
 const type = '1344x416';
 
 class _1344_416 extends Component {
@@ -10,10 +10,11 @@ class _1344_416 extends Component {
         super(props);
         let skip = Math.floor(Math.random() * 6)
         this.state = {
-            img: `../images/${skip}-min.webp`,
+            img: false,
             skip: Math.floor(Math.random() * 6),
             first: true,
-            id: window.localStorage.getItem('id')
+            id: window.localStorage.getItem('id'),
+            currentStyle: style
         };
     }
 
@@ -39,7 +40,8 @@ class _1344_416 extends Component {
                 this.setState({
                     img: res?.data?.img?.data,
                     skip: skip,
-                    first: false
+                    first: false,
+                    currentStyle: {}
                 })
             } else {
                 alert('Resim yüklenirken hata oluştu')
@@ -47,6 +49,9 @@ class _1344_416 extends Component {
         }).catch((err) => {
             alert("Resim yüklenirken hata oluştu");
             console.log(err);
+            this.setState({
+                currentStyle: {}
+            })
         })
     }
     componentWillUnmount() { clearInterval(this.interval) }
@@ -73,7 +78,7 @@ class _1344_416 extends Component {
 
     render() {
         return (
-            <div class="bg_landscape">
+            <div class="bg_landscape" style={this.state.style}>
                 {this.state.img !== false ? this.renderImg(this.state.img) : <div></div>}
             </div>
         );
