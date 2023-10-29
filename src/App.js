@@ -115,14 +115,14 @@ class App extends Component {
       return <UploadAkbankScreen></UploadAkbankScreen>
     }
     else if (window.location.href.includes("/_2160_3840_Switch_Akbank")) {
-      return <_2160_3840_Sabit></_2160_3840_Sabit>
+      return <_2160_3840_Switch></_2160_3840_Switch>
     }
     else if (window.location.href.includes("/_384_960_Akbank")) {
-      return <_384_960_Sabit></_384_960_Sabit>
+      return <_384_960></_384_960>
     } else if (window.location.href.includes("/_1344_416_Akbank")) {
       return <_1344_416></_1344_416>
     } else if (window.location.href.includes("/_2160_3840_Akbank")) {
-      return <_2160_3840_Sabit></_2160_3840_Sabit>
+      return <_2160_3840></_2160_3840>
     } else if (window.location.href.includes("/_1080_1920_Akbank")) {
       return <_1080_1920></_1080_1920>
     } else if (window.location.href.includes("/_960_2016_Akbank")) {
