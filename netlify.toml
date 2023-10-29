@@ -4,6 +4,16 @@
   status = 200
 
 [[redirects]]
+  from = "/uploadAkmerkez_Akbank"
+  to = "/"
+  status = 200
+
+[[redirects]]
+  from = "/_960_2016_Cekim"
+  to = "/"
+  status = 200
+
+[[redirects]]
   from = "/_384_960_Akbank"
   to = "/"
   status = 200

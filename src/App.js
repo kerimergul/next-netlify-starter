@@ -7,6 +7,7 @@ import UploadScreen from "./uploadScreen.js";
 // import UploadKanyonScreen from "./uploadKanyon.js";
 // import UploadZorluScreen from "./uploadZorlu.js";
 import UploadAkbankScreen from "./uploadAkbank.js";
+import UploadAkmerkez_AkbankScreen from "./upload_Akmerkez_Akbank.js";
 // Dikey
 // import _384_960 from "./framed_screens/384_960";
 // import _512_786 from "./framed_screens/512_786";
@@ -111,9 +112,15 @@ class App extends Component {
     // }else
 
     // AKBANK
-    if (window.location.href.includes("/uploadAkbank")) {
+    if (window.location.href.includes("/uploadAkmerkez_Akbank")) {
+      return <UploadAkmerkez_AkbankScreen></UploadAkmerkez_AkbankScreen>
+    } else if (window.location.href.includes("/uploadAkbank")) {
       return <UploadAkbankScreen></UploadAkbankScreen>
     }
+    else if (window.location.href.includes("/_960_2016_Cekim")) {
+      return <_960_2016_Cekim></_960_2016_Cekim>
+    }
+
     else if (window.location.href.includes("/_2160_3840_Switch_Akbank")) {
       return <_2160_3840_Switch></_2160_3840_Switch>
     }
