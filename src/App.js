@@ -86,6 +86,8 @@ import _2160_3840_Switch from "./framed_screens/2160_3840_switch.akbank.js";
 import _384_960_Sabit from "./framed_screens/384_960_sabit.akbank.js";
 import _2160_3840_Sabit from "./framed_screens/2160_3840_sabit.akbank.js";
 
+import _960_2016_Cekim from "./framed_screens/960_2016_cekim.akbank.js";
+
 
 
 class App extends Component {
