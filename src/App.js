@@ -82,6 +82,9 @@ import _1080_1920 from "./framed_screens/1080_1920.akbank.js";
 import _960_2016 from "./framed_screens/960_2016.akbank.js";
 import _2160_3840_Switch from "./framed_screens/2160_3840_switch.akbank.js";
 
+import _384_960_Sabit from "./framed_screens/384_960_sabit.akbank.js";
+import _2160_3840_Sabit from "./framed_screens/2160_3840_sabit.akbank.js";
+
 
 
 class App extends Component {
@@ -112,14 +115,14 @@ class App extends Component {
       return <UploadAkbankScreen></UploadAkbankScreen>
     }
     else if (window.location.href.includes("/_2160_3840_Switch_Akbank")) {
-      return <_2160_3840_Switch></_2160_3840_Switch>
+      return <_2160_3840_Sabit></_2160_3840_Sabit>
     }
     else if (window.location.href.includes("/_384_960_Akbank")) {
-      return <_384_960></_384_960>
+      return <_384_960_Sabit></_384_960_Sabit>
     } else if (window.location.href.includes("/_1344_416_Akbank")) {
       return <_1344_416></_1344_416>
     } else if (window.location.href.includes("/_2160_3840_Akbank")) {
-      return <_2160_3840></_2160_3840>
+      return <_2160_3840_Sabit></_2160_3840_Sabit>
     } else if (window.location.href.includes("/_1080_1920_Akbank")) {
       return <_1080_1920></_1080_1920>
     } else if (window.location.href.includes("/_960_2016_Akbank")) {

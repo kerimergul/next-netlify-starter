@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Stand from "./2160_3840_stand.akbank.js";
 import _2160_3840_Akbank from "./2160_3840.akbank.js";
+import _2160_3840_Sabit from "./2160_3840_sabit.akbank.js";
 
 const photoThreshold = 200;
 const standThreshold = 50;
@@ -54,7 +55,7 @@ class _1080_1920_Bagdat_Switch extends Component {
         if (currentScreen == "stand") {
             return (<Stand></Stand>);
         } else if (currentScreen == "photo") {
-            return (<_2160_3840_Akbank></_2160_3840_Akbank>);
+            return (<_2160_3840_Sabit></_2160_3840_Sabit>);
         }
     }
 
