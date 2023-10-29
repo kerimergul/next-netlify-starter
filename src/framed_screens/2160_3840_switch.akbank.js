@@ -55,7 +55,7 @@ class _1080_1920_Bagdat_Switch extends Component {
         if (currentScreen == "stand") {
             return (<Stand></Stand>);
         } else if (currentScreen == "photo") {
-            return (<_2160_3840_Sabit></_2160_3840_Sabit>);
+            return (<_2160_3840_Akbank></_2160_3840_Akbank>);
         }
     }
 
