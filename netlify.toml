@@ -9,6 +9,26 @@
   status = 200
 
 [[redirects]]
+  from = "/_384_960_Cekim"
+  to = "/"
+  status = 200
+
+[[redirects]]
+  from = "/_1344_416_Cekim"
+  to = "/"
+  status = 200
+
+[[redirects]]
+  from = "/_2160_3840_Cekim"
+  to = "/"
+  status = 200
+
+[[redirects]]
+  from = "/_1080_1920_Cekim"
+  to = "/"
+  status = 200
+
+[[redirects]]
   from = "/_960_2016_Cekim"
   to = "/"
   status = 200

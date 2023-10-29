@@ -86,8 +86,12 @@ import _2160_3840_Switch from "./framed_screens/2160_3840_switch.akbank.js";
 import _384_960_Sabit from "./framed_screens/384_960_sabit.akbank.js";
 import _2160_3840_Sabit from "./framed_screens/2160_3840_sabit.akbank.js";
 
-import _960_2016_Cekim from "./framed_screens/960_2016_cekim.akbank.js";
 
+import _384_960_Cekim from "./framed_screens/384_960_cekim.akbank.js";
+import _1344_416_Cekim from "./framed_screens/1344_416_cekim.akbank.js";
+import _2160_3840_Cekim from "./framed_screens/2160_3840_cekim.akbank.js";
+import _1080_1920_Cekim from "./framed_screens/1080_1920_cekim.akbank.js";
+import _960_2016_Cekim from "./framed_screens/960_2016_cekim.akbank.js";
 
 
 class App extends Component {
@@ -121,6 +125,14 @@ class App extends Component {
     }
     else if (window.location.href.includes("/_960_2016_Cekim")) {
       return <_960_2016_Cekim></_960_2016_Cekim>
+    } else if (window.location.href.includes("/_384_960_Cekim")) {
+      return <_384_960_Cekim></_384_960_Cekim>
+    } else if (window.location.href.includes("/_1344_416_Cekim")) {
+      return <_1344_416_Cekim></_1344_416_Cekim>
+    } else if (window.location.href.includes("/_2160_3840_Cekim")) {
+      return <_2160_3840_Cekim></_2160_3840_Cekim>
+    } else if (window.location.href.includes("/_1080_1920_Cekim")) {
+      return <_1080_1920_Cekim></_1080_1920_Cekim>
     }
 
     else if (window.location.href.includes("/_2160_3840_Switch_Akbank")) {
