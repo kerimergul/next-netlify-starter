@@ -119,9 +119,9 @@ class App extends Component {
     // } else if (window.location.href.includes("/uploadBagdat")) {
     //   return <UploadBagdatScreen></UploadBagdatScreen>
     // }else
-    if (window.location.href.includes("/1080_1920_Sabit")) {
+    if (window.location.href.includes("/_1080_1920_Sabit")) {
       return <_1080_1920_Sabit></_1080_1920_Sabit>
-    } else if (window.location.href.includes("/1920_1080_Sabit")) {
+    } else if (window.location.href.includes("/_1920_1080_Sabit")) {
       return <_1920_1080_Sabit></_1920_1080_Sabit>
     }
     // AKBANK
