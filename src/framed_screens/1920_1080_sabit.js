@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import "./stand.css";
 // import header from '../images/gulus.png';
 // import flash from '../images/flash5.png';
-const style = { backgroundImage: 'url(/backgrounds/bg_1920_1080_sabit-min.png)' };
+const style = { backgroundImage: 'url(/backgrounds/bg_1920_1080_sabit-min.webp)' };
 const style_img = {
     width: '100%',
     height: '100%',
