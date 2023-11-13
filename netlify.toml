@@ -9,6 +9,16 @@
   status = 200
 
 [[redirects]]
+  from = "/1080_1920_Sabit"
+  to = "/"
+  status = 200
+
+[[redirects]]
+  from = "/1920_1080_Sabit"
+  to = "/"
+  status = 200
+
+[[redirects]]
   from = "/_384_960_Cekim"
   to = "/"
   status = 200

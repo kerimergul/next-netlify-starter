@@ -76,23 +76,26 @@ import UploadAkmerkez_AkbankScreen from "./upload_Akmerkez_Akbank.js";
 
 // import _1080_1920_Giris from "./framed_screens/1080_1920_giris";
 
-import _384_960 from "./framed_screens/384_960.akbank.js";
-import _1344_416 from "./framed_screens/1344_416.akbank.js";
-import _2160_3840 from "./framed_screens/2160_3840.akbank.js";
-import _1080_1920 from "./framed_screens/1080_1920.akbank.js";
-import _960_2016 from "./framed_screens/960_2016.akbank.js";
-import _2160_3840_Switch from "./framed_screens/2160_3840_switch.akbank.js";
+// import _384_960 from "./framed_screens/384_960.akbank.js";
+// import _1344_416 from "./framed_screens/1344_416.akbank.js";
+// import _2160_3840 from "./framed_screens/2160_3840.akbank.js";
+// import _1080_1920 from "./framed_screens/1080_1920.akbank.js";
+// import _960_2016 from "./framed_screens/960_2016.akbank.js";
+// import _2160_3840_Switch from "./framed_screens/2160_3840_switch.akbank.js";
 
-import _384_960_Sabit from "./framed_screens/384_960_sabit.akbank.js";
-import _2160_3840_Sabit from "./framed_screens/2160_3840_sabit.akbank.js";
+// import _384_960_Sabit from "./framed_screens/384_960_sabit.akbank.js";
+// import _2160_3840_Sabit from "./framed_screens/2160_3840_sabit.akbank.js";
 
 
-import _384_960_Cekim from "./framed_screens/384_960_cekim.akbank.js";
-import _1344_416_Cekim from "./framed_screens/1344_416_cekim.akbank.js";
-import _2160_3840_Cekim from "./framed_screens/2160_3840_cekim.akbank.js";
-import _1080_1920_Cekim from "./framed_screens/1080_1920_cekim.akbank.js";
-import _960_2016_Cekim from "./framed_screens/960_2016_cekim.akbank.js";
+// import _384_960_Cekim from "./framed_screens/384_960_cekim.akbank.js";
+// import _1344_416_Cekim from "./framed_screens/1344_416_cekim.akbank.js";
+// import _2160_3840_Cekim from "./framed_screens/2160_3840_cekim.akbank.js";
+// import _1080_1920_Cekim from "./framed_screens/1080_1920_cekim.akbank.js";
+// import _960_2016_Cekim from "./framed_screens/960_2016_cekim.akbank.js";
 
+
+import _1080_1920_Sabit from "./framed_screens/1080_1920_sabit.js";
+import _1920_1080_Sabit from "./framed_screens/1920_1080_sabit.js";
 
 class App extends Component {
   constructor(props) {
@@ -116,39 +119,43 @@ class App extends Component {
     // } else if (window.location.href.includes("/uploadBagdat")) {
     //   return <UploadBagdatScreen></UploadBagdatScreen>
     // }else
-
+    if (window.location.href.includes("/1080_1920_Sabit")) {
+      return <_1080_1920_Sabit></_1080_1920_Sabit>
+    } else if (window.location.href.includes("/1920_1080_Sabit")) {
+      return <_1920_1080_Sabit></_1920_1080_Sabit>
+    }
     // AKBANK
-    if (window.location.href.includes("/uploadAkmerkez_Akbank")) {
-      return <UploadAkmerkez_AkbankScreen></UploadAkmerkez_AkbankScreen>
-    } else if (window.location.href.includes("/uploadAkbank")) {
-      return <UploadAkbankScreen></UploadAkbankScreen>
-    }
-    else if (window.location.href.includes("/_960_2016_Cekim")) {
-      return <_960_2016_Cekim></_960_2016_Cekim>
-    } else if (window.location.href.includes("/_384_960_Cekim")) {
-      return <_384_960_Cekim></_384_960_Cekim>
-    } else if (window.location.href.includes("/_1344_416_Cekim")) {
-      return <_1344_416_Cekim></_1344_416_Cekim>
-    } else if (window.location.href.includes("/_2160_3840_Cekim")) {
-      return <_2160_3840_Cekim></_2160_3840_Cekim>
-    } else if (window.location.href.includes("/_1080_1920_Cekim")) {
-      return <_1080_1920_Cekim></_1080_1920_Cekim>
-    }
+    // if (window.location.href.includes("/uploadAkmerkez_Akbank")) {
+    //   return <UploadAkmerkez_AkbankScreen></UploadAkmerkez_AkbankScreen>
+    // } else if (window.location.href.includes("/uploadAkbank")) {
+    //   return <UploadAkbankScreen></UploadAkbankScreen>
+    // }
+    // else if (window.location.href.includes("/_960_2016_Cekim")) {
+    //   return <_960_2016_Cekim></_960_2016_Cekim>
+    // } else if (window.location.href.includes("/_384_960_Cekim")) {
+    //   return <_384_960_Cekim></_384_960_Cekim>
+    // } else if (window.location.href.includes("/_1344_416_Cekim")) {
+    //   return <_1344_416_Cekim></_1344_416_Cekim>
+    // } else if (window.location.href.includes("/_2160_3840_Cekim")) {
+    //   return <_2160_3840_Cekim></_2160_3840_Cekim>
+    // } else if (window.location.href.includes("/_1080_1920_Cekim")) {
+    //   return <_1080_1920_Cekim></_1080_1920_Cekim>
+    // }
 
-    else if (window.location.href.includes("/_2160_3840_Switch_Akbank")) {
-      return <_2160_3840_Switch></_2160_3840_Switch>
-    }
-    else if (window.location.href.includes("/_384_960_Akbank")) {
-      return <_384_960></_384_960>
-    } else if (window.location.href.includes("/_1344_416_Akbank")) {
-      return <_1344_416></_1344_416>
-    } else if (window.location.href.includes("/_2160_3840_Akbank")) {
-      return <_2160_3840></_2160_3840>
-    } else if (window.location.href.includes("/_1080_1920_Akbank")) {
-      return <_1080_1920></_1080_1920>
-    } else if (window.location.href.includes("/_960_2016_Akbank")) {
-      return <_960_2016></_960_2016>
-    }
+    // else if (window.location.href.includes("/_2160_3840_Switch_Akbank")) {
+    //   return <_2160_3840_Switch></_2160_3840_Switch>
+    // }
+    // else if (window.location.href.includes("/_384_960_Akbank")) {
+    //   return <_384_960></_384_960>
+    // } else if (window.location.href.includes("/_1344_416_Akbank")) {
+    //   return <_1344_416></_1344_416>
+    // } else if (window.location.href.includes("/_2160_3840_Akbank")) {
+    //   return <_2160_3840></_2160_3840>
+    // } else if (window.location.href.includes("/_1080_1920_Akbank")) {
+    //   return <_1080_1920></_1080_1920>
+    // } else if (window.location.href.includes("/_960_2016_Akbank")) {
+    //   return <_960_2016></_960_2016>
+    // }
 
     // SWITCH SCREENS
 
