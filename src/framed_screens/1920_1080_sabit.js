@@ -17,6 +17,9 @@ class _1920_1080_Sabit extends Component {
             first: true,
         };
     }
+    componentDidMount(){
+        document.title = 'Signal Yatay';
+    }
 
     render() {
         return (

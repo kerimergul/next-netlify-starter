@@ -17,6 +17,9 @@ class _1080_1920_Sabit extends Component {
             first: true,
         };
     }
+    componentDidMount() {
+        document.title = 'Signal Dikey';
+    }
 
     render() {
         return (
